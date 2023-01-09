@@ -4,5 +4,6 @@
 #include <windows.h>
 
 void GotoXY(int x,int y);
+void HideCursor();
 
 #endif // !_NOAGAMEENGINE_SCREEN_H

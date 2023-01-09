@@ -4,6 +4,8 @@
 
 //用户自定义库
 #include "Game.h"
+#include "GameMenu.h"
+#include "Screen.h"
 
 class Scene
 {
@@ -15,19 +17,13 @@ public:
 	void Run();//执行currentGame的GameMain()
 
 public:
-	Game* currentGame;
+	Game* currentGame;//这个变量是当前正在执行的窗口
 
 private:
 
 };
 
-Scene::Scene()
-{
-}
 
-Scene::~Scene()
-{
-}
 
 #endif // !_NOAGAMEENGINE_SCENE_H
 
