@@ -6,7 +6,7 @@
 
 //用户自定义库
 #include "InputSystem.h"
-#include "Game.h"
+//#include "Game.h"
 #include "Scene.h"
 #include "stdlib.h"
 
@@ -17,10 +17,10 @@ using namespace std;
 
 class MainMenu :public Game{
 public:
-    MainMenu(Scene * scene);
+    MainMenu(Scene* scene);
     ~MainMenu();
 public:                     //公共方法
-    void GameMain();        //菜单的显示
+    void GameMain() override;        //菜单的显示
     void Input();
     void Display();
 
@@ -29,8 +29,8 @@ private:
 
 public:                     //公共属性
     int buttonIndex=0;
-    Scene * sceneManager;
-    Game * nextScene;       //下一个场景
+    Scene* sceneManager=nullptr;
+    Game* nextScene;       //下一个场景
 };
 
 #endif

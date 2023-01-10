@@ -5,8 +5,12 @@
 
 class Game {
     public://公共方法
-        virtual void GameMain() {}//菜单的显示,含虚方法的类是抽象类
+        virtual void GameMain()=0;//菜单的显示,含虚方法的类是抽象类
 };
+
+void GameMain(){
+
+}
 
 
 

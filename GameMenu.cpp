@@ -1,10 +1,10 @@
 #include "GameMenu.h"
 
-MainMenu::MainMenu(Scene * scene) {
+MainMenu::MainMenu(Scene* scene) {
     //初始化
     buttonIndex = 0;
     sceneManager = scene;
-    nextScene = nullptr;
+    nextScene = nullptr;                //设计下一个场景
     sceneManager->currentGame = this;
     
 }
@@ -14,10 +14,8 @@ MainMenu::~MainMenu() {
     sceneManager->currentGame = nextScene;
 }
 
-void MainMenu::GameMain()
-{
+void MainMenu::GameMain(){
     //主要的方法体
-    
     Display();
     Input();
 }
