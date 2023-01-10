@@ -7,6 +7,8 @@
 //用户自定义库
 #include "InputSystem.h"
 #include "Game.h"
+#include "Scene.h"
+#include "stdlib.h"
 
 //定义按下按键的宏
 #define KEY_DOWN(VK_NONAME) ((GetAsyncKeyState(VK_NONAME) & 0x8000) ? 1:0) 
@@ -15,15 +17,20 @@ using namespace std;
 
 class MainMenu :public Game{
 public:
-    MainMenu();
+    MainMenu(Scene * scene);
     ~MainMenu();
-public://公共方法
-    void GameMain();//菜单的显示
+public:                     //公共方法
+    void GameMain();        //菜单的显示
     void Input();
     void Display();
 
-public://公共属性
+private:
+    void Enter(int index);
+
+public:                     //公共属性
     int buttonIndex=0;
+    Scene * sceneManager;
+    Game * nextScene;       //下一个场景
 };
 
 #endif

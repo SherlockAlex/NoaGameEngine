@@ -1,2 +1,25 @@
 ﻿  GameMenu.cpp
-  NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe
+  main.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(20,13): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(20,26): error C2146: 语法错误: 缺少“)”(在标识符“scene”的前面)
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(20,26): error C3646: “scene”: 未知重写说明符
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(20,13): error C2059: 语法错误:“)”
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(32,11): error C3646: “sceneManager”: 未知重写说明符
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(32,23): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+  Scene.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(20,13): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(20,26): error C2146: 语法错误: 缺少“)”(在标识符“scene”的前面)
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(20,26): error C3646: “scene”: 未知重写说明符
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(20,13): error C2059: 语法错误:“)”
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(32,11): error C3646: “sceneManager”: 未知重写说明符
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(32,23): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\Scene.cpp(8,35): error C2665: “MainMenu::MainMenu”: 没有重载函数可以转换所有参数类型
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(34,1): message : 可能是“MainMenu::MainMenu(const MainMenu &)”
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\Scene.cpp(8,35): message : “MainMenu::MainMenu(const MainMenu &)”: 无法将参数 1 从“Scene *”转换为“const MainMenu &”
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\Scene.cpp(8,36): message : 原因如下: 无法从“Scene *”转换为“const MainMenu”
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\Scene.cpp(8,36): message : 无构造函数可以接受源类型，或构造函数重载决策不明确
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\GameMenu.h(20,5): message : 或    “MainMenu::MainMenu(const int)”
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\Scene.cpp(8,35): message : “MainMenu::MainMenu(const int)”: 无法将参数 1 从“Scene *”转换为“const int”
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\Scene.cpp(8,36): message : 没有使该转换得以执行的上下文
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\Scene.cpp(8,35): message : 尝试匹配参数列表“(Scene *)”时
+  正在生成代码...

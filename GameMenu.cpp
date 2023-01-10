@@ -1,13 +1,17 @@
 #include "GameMenu.h"
 
-MainMenu::MainMenu() {
+MainMenu::MainMenu(Scene * scene) {
     //初始化
     buttonIndex = 0;
+    sceneManager = scene;
+    nextScene = nullptr;
+    sceneManager->currentGame = this;
     
 }
 
 MainMenu::~MainMenu() {
-
+    //在卸载当前场景的时候，把下一个场景的资源交给管理器
+    sceneManager->currentGame = nextScene;
 }
 
 void MainMenu::GameMain()
@@ -21,7 +25,7 @@ void MainMenu::GameMain()
 void MainMenu::Display() {
     
     switch (buttonIndex) {
-        //游戏菜单界面设计
+            //游戏菜单界面设计
         case 0:
             //system("cls");
             cout << "Name of New Game" << endl;
@@ -40,31 +44,6 @@ void MainMenu::Display() {
 void MainMenu::Input() {
     //这边是获取按键是否按下
     //如果按下一次w/s键，对应的箭头就移动
-    //if (GetKeyDown('w'))
-    //{
-    //    buttonIndex++;
-    //    if (buttonIndex >1) {
-    //        buttonIndex = 0;
-    //    }
-    //    Sleep(1);
-    //    return;
-    //}
-    //if (GetKeyDown('s'))
-    //{
-    //    buttonIndex--;
-    //    if (buttonIndex < 0) {
-    //        buttonIndex = 1;
-    //    }
-    //    Sleep(1);
-    //    return;
-    //}
-    //if (GetKeyDown(' ')) {
-    //    //如果按下的了空格，表示进入当前按键，然后卸载这个场景，加载下一个场景
-    //    cout << "Enter Game!" << endl;
-    //    Sleep(1);
-    //    return;
-    //}
-    //return;
 
     switch (_getch()) {
         //按键选择
@@ -83,7 +62,23 @@ void MainMenu::Input() {
         case ' ':
             //实现当前功能，执行一个函数叫Enter()
             cout << "Enter:" << buttonIndex << endl;
+            Enter(buttonIndex);                     //0是加载下一个，1是退出游戏
             break;
     }
 
+}
+
+void MainMenu::Enter(int index) {
+    switch (index)
+    {
+    case 0:if (nextScene!=nullptr)          //如果下一个场景不为空，就加载下一个场景，然后卸载这个场景
+           {
+                system("cls");
+                //nextScene->GameMain();    //把下一个场景交给scene的currentScene
+                delete(this);
+           }
+           break;
+    case 1:exit(100);                       //终止程序执行
+           break;
+    }
 }

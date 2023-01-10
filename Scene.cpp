@@ -5,7 +5,7 @@ Scene::Scene()
 {
 	//if (currentGame==nullptr)
 	{
-		MainMenu * mainMenu=new MainMenu();//不使用new，将类声明在堆上
+		MainMenu * mainMenu=new MainMenu(this);//不使用new，将类声明在堆上
 		currentGame = mainMenu;
 	}
 }
