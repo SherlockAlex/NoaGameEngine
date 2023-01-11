@@ -1,4 +1,4 @@
-//场景管理
+//场景管理模块
 #include "Scene.h"
 
 Scene::Scene()

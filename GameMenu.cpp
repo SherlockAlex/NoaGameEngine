@@ -5,15 +5,10 @@
 MainMenu::MainMenu() {
     //初始化
     buttonIndex = 0;
-    //sceneManager = scene;
-    nextScene = nullptr;                //设计下一个场景
-    //sceneManager->currentGame = this;
-    
 }
 
 MainMenu::~MainMenu() {
     //在卸载当前场景的时候，把下一个场景的资源交给管理器
-    //sceneManager->currentGame = nextScene;
 }
 
 void MainMenu::GameMain() {
@@ -71,15 +66,11 @@ void MainMenu::Enter(int index) {
     switch (index)
     {
     case 0:
-        cout << "加载下一个场景" << endl;
-        if (nextScene!=nullptr)          //如果下一个场景不为空，就加载下一个场景，然后卸载这个场景
-        {
-             system("cls");
-             //nextScene->GameMain();    //把下一个场景交给scene的currentScene
-             delete(this);
-        }
+        cout << "执行事件:" << "加载场景";
+        //按键事件名
         break;
     case 1:
+        cout << "执行事件:" << "退出游戏";
         exit(100);                       //终止程序执行
         break;
     }

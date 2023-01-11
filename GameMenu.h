@@ -6,7 +6,7 @@
 
 //用户自定义库
 #include "InputSystem.h"
-//#include "Game.h"
+#include "Game.h"
 #include "Scene.h"
 #include "stdlib.h"
 
@@ -23,10 +23,6 @@ public:                    //公有方法
     void Input();          //输入
     void Display();        //显示
     void GameMain() override;
-    /*void GameMain() override {
-        Display();
-        Input();
-    }*/
 
 private:
     void Enter(int index);
@@ -34,7 +30,6 @@ private:
 public:                     //公共属性
     int buttonIndex=0;
     //Scene* sceneManager=nullptr;
-    Game* nextScene;       //下一个场景
 };
 
 #endif
