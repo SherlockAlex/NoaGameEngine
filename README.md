@@ -1,4 +1,4 @@
-# NoaGameEngine
-this is a min game engine
+### NoaGameEngine
 
-it is just example
+This is a very small game engine
+
