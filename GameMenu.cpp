@@ -1,23 +1,23 @@
 #include "GameMenu.h"
 
-MainMenu::MainMenu(Scene* scene) {
+MainMenu::MainMenu() {
     //初始化
     buttonIndex = 0;
-    sceneManager = scene;
+    //sceneManager = scene;
     nextScene = nullptr;                //设计下一个场景
-    sceneManager->currentGame = this;
+    //sceneManager->currentGame = this;
     
 }
 
 MainMenu::~MainMenu() {
     //在卸载当前场景的时候，把下一个场景的资源交给管理器
-    sceneManager->currentGame = nextScene;
+    //sceneManager->currentGame = nextScene;
 }
 
-void MainMenu::GameMain(){
-    //主要的方法体
-    Display();
-    Input();
+void MainMenu::GameMain() {
+        //主要的方法体
+        Display();
+        Input();
 }
 
 void MainMenu::Display() {

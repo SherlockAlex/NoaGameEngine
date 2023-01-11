@@ -17,19 +17,23 @@ using namespace std;
 
 class MainMenu :public Game{
 public:
-    MainMenu(Scene* scene);
+    MainMenu();
     ~MainMenu();
-public:                     //公共方法
-    void GameMain() override;        //菜单的显示
-    void Input();
-    void Display();
+public:                    //公有方法
+    void Input();          //输入
+    void Display();        //显示
+    void GameMain() override;
+    /*void GameMain() override {
+        Display();
+        Input();
+    }*/
 
 private:
     void Enter(int index);
 
 public:                     //公共属性
     int buttonIndex=0;
-    Scene* sceneManager=nullptr;
+    //Scene* sceneManager=nullptr;
     Game* nextScene;       //下一个场景
 };
 
