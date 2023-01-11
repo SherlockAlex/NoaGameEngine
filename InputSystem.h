@@ -16,6 +16,7 @@ enum  KeyCode
 };
 
 //extern KeyCode Key;
+extern char GetKeyCode();
 
 extern bool GetKeyDown(KeyCode key);
 

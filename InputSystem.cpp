@@ -1,6 +1,8 @@
 #include "InputSystem.h"
 
-KeyCode Key;
+char GetKeyCode() {
+	return _getch();
+}
 
 bool GetKeyDown(KeyCode key) {
 	//if (_kbhit())

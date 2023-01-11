@@ -44,7 +44,7 @@ void MainMenu::Display() {
 void MainMenu::Input() {
     //这边是获取按键是否按下
     //如果按下一次w/s键，对应的箭头就移动
-    switch (_getch()) {
+    switch (GetKeyCode()) {
         //按键选择
         case W:
             buttonIndex++;
