@@ -1,7 +1,7 @@
 #ifndef _NOAGAMEENGINE_GAMEMENU_H
 #define _NOAGAMEENGINE_GAMEMENU_H
 
-//定义关于游戏开始菜单的类
+//定义关于游戏开始菜单的类，是一个例子
 #include <iostream>
 
 //用户自定义库

@@ -1,6 +1,8 @@
 #include "InputSystem.h"
 
-bool GetKeyDown(char key) {
+KeyCode Key;
+
+bool GetKeyDown(KeyCode key) {
 	//if (_kbhit())
 	{//EnterÔÚKey CodeÖĞÎª13
 		char input;

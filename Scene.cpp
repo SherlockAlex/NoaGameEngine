@@ -15,7 +15,7 @@ Scene::~Scene()
 }
 
 void Scene::Run() {
-
+    //Run是执行currentGame的GameMain函数，然后后来的继承脚本，然后编写GameMain()函数
     while (true)
     {
         GotoXY(0, 0);//刷新屏幕
