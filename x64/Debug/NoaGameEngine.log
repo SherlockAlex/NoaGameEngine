@@ -1,2 +1,12 @@
-﻿  GameMenu.cpp
-  NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe
+﻿  GameObject.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\NoaMath.h(21,26): error C2572: “Vector2::Vector2”: 重定义默认参数 : 参数 1
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\NoaMath.h(9,2): message : 参见“Vector2::Vector2”的声明
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\NoaMath.h(21,36): error C2572: “Vector2::Vector2”: 重定义默认参数 : 参数 2
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\NoaMath.h(9,2): message : 参见“Vector2::Vector2”的声明
+  NoaMath.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\NoaMath.h(21,26): error C2572: “Vector2::Vector2”: 重定义默认参数 : 参数 1
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\NoaMath.h(9,2): message : 参见“Vector2::Vector2”的声明
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\NoaMath.h(21,36): error C2572: “Vector2::Vector2”: 重定义默认参数 : 参数 2
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\NoaMath.h(9,2): message : 参见“Vector2::Vector2”的声明
+  Scene.cpp
+  正在生成代码...

@@ -1,0 +1,7 @@
+首先，游戏引擎分为下面几个部分
+
+每个游戏中的物体都是一个对象，都是一个GameObject，他们的属性有位置，有一个初始化函数OnStart，一个循环函数OnUpdate
+
+每个画面都是一个场景，一个Scene，都要继承自Scene这个类，Scene是用来存放游戏对象的，我们的游戏对象可以认为是一个Scene的属性，然后Scene中去执行每个初始化和Loop操作
+
+还有个SceneManager，他的属性有关于Scene的列表，有currentScene，在Run中先初始化中，先执行Start，在执行Loop（）；

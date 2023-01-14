@@ -1,15 +1,13 @@
 //系统库
 #include <iostream>
 //自定义库
-
-#include "Scene.h"
+#include "InputSystem.h"
 
 using namespace std;
 
-int main(void)
-{
-    Scene scene;
-    scene.Run();//运行游戏
+int main() {
 
-    return 0;
+	//cout <<("%c",W) << endl;
+
+	return 0;
 }

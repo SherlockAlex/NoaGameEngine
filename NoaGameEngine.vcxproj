@@ -70,6 +70,14 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExternalIncludePath>D:\SDL2\msvc%28VS%29\SDL2-2.26.0-allinone\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>D:\SDL2\msvc%28VS%29\SDL2-2.26.0-allinone\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ExternalIncludePath>D:\SDL2\msvc%28VS%29\SDL2-2.26.0-allinone\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>D:\SDL2\msvc%28VS%29\SDL2-2.26.0-allinone\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -127,20 +135,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="GameLoader.h" />
-    <ClInclude Include="GameMenu.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="NoaMath.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
-    <ClInclude Include="Screen.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GameMenu.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="InputSystem.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NoaMath.cpp" />
     <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="Screen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="架构说明.txt" />
+    <Text Include="程序规范.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NoaGameEngine.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

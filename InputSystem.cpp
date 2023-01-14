@@ -16,3 +16,5 @@ bool GetKeyDown(KeyCode key) {
 	}
 	return false;
 }
+
+//ÊÂ¼şÓÃswitch
