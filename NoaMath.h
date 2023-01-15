@@ -15,7 +15,7 @@ public:
 
 public:
 	float GetLength();
-	Vector2 GetDirection();//返回的是一个方向
+	Vector2 GetDirection();			//返回的是一个方向
 
 }Vector2;
 

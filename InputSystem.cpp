@@ -5,8 +5,7 @@ char GetKeyCode() {
 }
 
 bool GetKeyDown(KeyCode key) {
-	//if (_kbhit())
-	{//Enter在Key Code中为13
+	{
 		char input;
 		input = _getch();
 		if (input==key) {
@@ -16,5 +15,3 @@ bool GetKeyDown(KeyCode key) {
 	}
 	return false;
 }
-
-//事件用switch
