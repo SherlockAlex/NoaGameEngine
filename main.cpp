@@ -1,13 +1,11 @@
-//系统库
-#include <iostream>
 //自定义库
-#include "InputSystem.h"
-
-using namespace std;
+#include "SceneManager.h"
 
 int main() {
 
 	//cout <<("%c",W) << endl;
+	SceneManager* sceneManager = new SceneManager();
+	sceneManager->Run();
 
 	return 0;
 }

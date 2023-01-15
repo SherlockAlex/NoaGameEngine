@@ -6,7 +6,18 @@
 class GameObject
 {
 public:
-	Vector2 * transform=new Vector2(0,0);//默认位置
+	Vector2 * transform=nullptr;//默认位置
+
+public:
+
+	GameObject();
+	~GameObject();
+
+	//下面两个方法会执行
+
+	virtual void OnStart() = 0;
+	virtual void OnUpdate() = 0;
+
 };
 
 #endif

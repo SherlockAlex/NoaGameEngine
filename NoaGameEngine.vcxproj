@@ -140,6 +140,7 @@
     <ClInclude Include="NoaMath.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameObject.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NoaMath.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="架构说明.txt" />
