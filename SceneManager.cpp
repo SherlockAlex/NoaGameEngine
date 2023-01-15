@@ -1,10 +1,5 @@
-//系统库
-#include <iostream>
-
 //自定义库
 #include "SceneManager.h"
-
-using namespace std;
 
 SceneManager::SceneManager()
 {

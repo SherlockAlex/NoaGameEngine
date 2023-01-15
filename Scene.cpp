@@ -2,9 +2,11 @@
 
 void Scene::GameMain() {
 	//在这里面执行所有物件的操作
+
 	this->Start();
 	while (1)
 	{
+		ResetConsole();		//刷新屏幕
 		this->Update();
 	}
 }

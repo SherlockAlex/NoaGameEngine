@@ -2,6 +2,8 @@
 #ifndef NOAGAMEENGINE_SCENE_H
 #define NOAGAMEENGINE_SCENE_H
 
+#include "Application.h"
+
 class Scene {
 	//有一个对象链表
 

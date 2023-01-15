@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Application.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="InputSystem.h" />
     <ClInclude Include="NoaMath.h" />
@@ -143,6 +144,7 @@
     <ClInclude Include="SceneManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Application.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="InputSystem.cpp" />
     <ClCompile Include="main.cpp" />

@@ -1,8 +1,2 @@
-﻿  GameObject.cpp
-  InputSystem.cpp
-  NoaMath.cpp
-  Scene.cpp
-  SceneManager.cpp
-  main.cpp
-  正在生成代码...
+﻿  main.cpp
   NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe

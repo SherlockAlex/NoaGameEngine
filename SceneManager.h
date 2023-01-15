@@ -3,7 +3,13 @@
 #ifndef NOAGAMEENGINE_SCENEMANAGER
 #define NOAGAMEENGINE_SCENEMANAGER
 
+//系统库
+#include <iostream>
+
+//自定义库
 #include "Scene.h"
+
+using namespace std;
 
 class SceneManager
 {
