@@ -1,8 +1,10 @@
 //自定义库
 #include "SceneManager.h"
+#include "TestScene.h"
 
 SceneManager::SceneManager()
 {
+	currentScene = new TestScene();//注册初始场景
 }
 
 SceneManager::~SceneManager()

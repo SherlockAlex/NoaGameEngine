@@ -8,6 +8,10 @@ class GameObject
 public:
 	Vector2 * transform=nullptr;//默认位置
 
+	
+	float bx = 0;				//缓存上一帧坐标
+	float by = 0;
+
 public:
 
 	GameObject();

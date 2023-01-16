@@ -15,6 +15,22 @@ void HideCursor()
 	SetConsoleCursorInfo(handle, &CursorInfo);//设置控制台光标状态
 }
 
+void SetCursorPos(float x, float y)
+{
+
+	COORD coord;
+	coord.X = (int)x;
+	coord.Y = (int)y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+
+	
+}
+
+//自定义的文字颜色函数
+void SetColor(int color) {
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+}
+
 void ResetConsole()
 {
 	//重置控制台
@@ -26,5 +42,9 @@ void Quit()
 {
 	//关闭程序
 	exit(0);
+}
+
+void DelaySecond()
+{
 }
 
