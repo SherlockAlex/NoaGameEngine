@@ -3,9 +3,6 @@
 bool Player::PlayerControl()
 {
 	//控制玩家移动
-	
-
-	ResetConsole();
 
 	float dx = 0;
 	float dy = 0;
@@ -13,21 +10,20 @@ bool Player::PlayerControl()
 	switch (GetKeyCode())
 	{
 		case W:
-			dy=1.1f;
+			dy=1.0f;
 			break;
 		case S:
-			dy = -1.1f;
+			dy = -1.0f;
 			break;
 		case A:
-			dx = -1.1f;
+			dx = -1.0f;
 			break;
 		case D:
-			dx = 1.1f;
+			dx = 1.0f;
 			break;
 	}
 
-	bx = transform->x;
-	by = transform->y;
+	
 
 	if (dx==0&&dy==0) {
 		return false;
@@ -45,15 +41,17 @@ bool Player::PlayerControl()
 	}
 	transform->y = transform->y - dy;
 
-	if (transform->y > 23) {
-		transform->y = 23;
+	if (transform->y > 24) {
+		transform->y = 24;
 	}
 	else
 	{
-		if (transform->y < 1) {
-			transform->y = 1;
+		if (transform->y < 2) {
+			transform->y = 2;
 		}
 	}
+
+	
 
 	return true;
 	
@@ -72,18 +70,13 @@ void Player::Move()
 	SetCursorPos(transform->x, transform->y);
 	cout << "我";
 
-
-
 	if (PlayerControl()) {
 
-		//想办法清掉上一帧的字符
-		SetCursorPos(bx, by);
-		cout << " ";
-		//PlayerControl();
+		//玩家正在移动的代码
 		SetCursorPos(transform->x, transform->y);
-		cout << "我";
 	}
-
+	
+	
 }
 
 Player::Player()

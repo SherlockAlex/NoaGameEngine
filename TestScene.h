@@ -32,13 +32,17 @@ public:
 	void Start() override
 	{
 		//场景初始化
-		BuildWorld(world);
+		
 		player->OnStart();
 	}
 
 	void Update() override
 	{
+		//显示UI信息
+		cout << "HP:" << "100" << endl;
+		BuildWorld(world);
 		player->OnUpdate();
+		
 	}
 
 };

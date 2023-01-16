@@ -1,2 +1,4 @@
-﻿  Application.cpp
+﻿  Player.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\Player.h(17,7): warning C4305: “初始化”: 从“int”到“char”截断
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\Player.h(17,15): warning C4309: “初始化”: 截断常量值
   NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe
