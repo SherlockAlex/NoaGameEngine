@@ -59,13 +59,6 @@ bool Player::PlayerControl()
 
 void Player::Move()
 {
-	//显示玩家的移动,利用屏幕坐标来显示玩家移动
-	//首先知道玩家可以活动的范围
-	//x:(1,24)
-	//y:(1,49)
-	//获取玩家当前的屏幕位置
-
-	//首先光标定位到玩家位置，然后打印字符
 
 	SetCursorPos(transform->x, transform->y);
 	cout << "我";

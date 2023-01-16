@@ -1,0 +1,5 @@
+首先，你需要重写SceneManager这个类的内容，你需要在里面添加你的Scene，以及管理你的Scene是如何切换的，注意currentScene这个属性不要删
+
+其次，你创建的每个页面都是一个Scene，每个Scene都要继承Scene这个类，这些Scene要在SceneManager作为他的属性
+
+

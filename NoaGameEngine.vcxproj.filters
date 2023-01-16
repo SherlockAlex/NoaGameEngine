@@ -79,6 +79,9 @@
     <Text Include="程序规范.txt">
       <Filter>资源文件</Filter>
     </Text>
+    <Text Include="使用说明.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="NoaGameEngine.rc">
