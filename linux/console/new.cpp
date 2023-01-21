@@ -8,9 +8,12 @@ void Creator::Create(char * dir,char * name){
 	char * cpcmd="cp ./../linux/* ";
 
 	strcat(dircmd,dir);
-	system(dircmd);			//make dir for new project
+	strcat(dircmd,"/");
+	strcat(dircmd,name);
+	std::cout<<dircmd<<std::endl;
+	//system(dircmd);			//make dir for new project
 	strcat(cpcmd,dir);
-	system(cpcmd);
+	//system(cpcmd);
 
 
 }

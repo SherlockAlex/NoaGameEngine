@@ -2,6 +2,7 @@
 #include <iostream>
 
 void FreshScreen() {
+	//
 	system("clear");
 	//printf("\33[0;0H");
 }
