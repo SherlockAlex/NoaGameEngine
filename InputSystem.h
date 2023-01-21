@@ -1,9 +1,9 @@
 #ifndef _NOAGAMEENGINE_INPUTSYSTEM_H
 #define _NOAGAMEENGINE_INPUTSYSTEM_H
 
-#include<windows.h>
-#include <conio.h>
-//定义一种宏
+#include<termio.h>
+#include <unistd.h>
+//露拧脪氓脪禄脰脰潞锚
 #define KEY_DOWN(VK_NONAME) ((GetAsyncKeyState(VK_NONAME) & 0x8000) ? 1:0) 
 
 enum  KeyCode
@@ -15,7 +15,7 @@ enum  KeyCode
 	Space=' '
 };
 
-//extern KeyCode Key;
+extern int _getch();
 extern char GetKeyCode();
 
 extern bool GetKeyDown(KeyCode key);

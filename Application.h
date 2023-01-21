@@ -2,15 +2,16 @@
 #ifndef NOAGAMEENGINE_APPLICATION_H
 #define NOAGAMEENGIEN_APPLICATION_H
 
-//系统库
-#include <windows.h>
+//脧碌脥鲁驴芒
+//#include <windows.h>
+#include <cstdio>
 
-void FreshScreen();						//刷新屏幕
-void HideCursor();						//隐藏鼠标
-void SetCursorPos(float x, float y);	//设置光标位置
-void SetColor(int color);				//设置文字颜色
-void ResetConsole();					//控制台初始化
-void Quit();							//关闭应用
-void DelaySecond();						//延时几秒
+void FreshScreen();						//脣垄脨脗脝脕脛禄
+void HideCursor();						//脪镁虏脴脢贸卤锚
+void SetCursorPos(float x, float y);	//脡猫脰脙鹿芒卤锚脦禄脰脙
+void SetColor(int color);				//脡猫脰脙脦脛脳脰脩脮脡芦
+void ResetConsole();					//驴脴脰脝脤拧鲁玫脢艗禄炉
+void Quit();							//鹿脴卤脮脫艩脫脙
+void DelaySecond();						//脩脫脢卤艗啪脙毛
 
 #endif
