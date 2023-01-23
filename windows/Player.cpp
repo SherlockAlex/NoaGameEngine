@@ -68,7 +68,7 @@ void Player::Move()
 	//首先光标定位到玩家位置，然后打印字符
 
 	SetCursorPos(transform->x, transform->y);
-	cout << "我";
+	cout << this->image;
 
 	if (PlayerControl()) {
 
