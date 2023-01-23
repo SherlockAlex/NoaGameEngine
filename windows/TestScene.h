@@ -41,7 +41,8 @@ public:
 		//отй╬UIпео╒
 		cout << "HP:" << "100" << endl;
 		BuildWorld(world);
-		player->OnUpdate();
+		//player->OnUpdate();
+		//cout << "╧Ч╧Ч";
 		
 	}
 
