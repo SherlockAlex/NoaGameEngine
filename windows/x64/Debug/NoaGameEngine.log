@@ -1,0 +1,23 @@
+﻿  Application.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  GameObject.cpp
+  InputSystem.cpp
+  main.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  NoaMath.cpp
+  Player.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.h(17,7): warning C4305: “初始化”: 从“int”到“char”截断
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.h(17,15): warning C4309: “初始化”: 截断常量值
+  Scene.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  SceneManager.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.h(17,7): warning C4305: “初始化”: 从“int”到“char”截断
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.h(17,15): warning C4309: “初始化”: 截断常量值
+  TestScene.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.h(17,7): warning C4305: “初始化”: 从“int”到“char”截断
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.h(17,15): warning C4309: “初始化”: 截断常量值
+  正在生成代码...
+  NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe
