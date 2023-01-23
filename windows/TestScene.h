@@ -17,12 +17,12 @@ class TestScene :public Scene
 	//测试场景
 
 private:
-	char world[25][50];
+	string world[10];
 	GameObject* player = nullptr;//主角
 	//char player = '我';//主角
 
 private:
-	void BuildWorld(char world[][50]);
+	void BuildWorld(string world[]);
 
 public:
 	TestScene();
