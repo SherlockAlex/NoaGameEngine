@@ -4,9 +4,9 @@
 #ifndef NOAGAMEENGINE_TESTSCENE_H
 #define NOAGAMEENGINE_TESTSCENE_H
 
-//系统库
+//System
 #include <iostream>
-//自定义库
+//
 #include "Scene.h"
 #include "Player.h"
 
@@ -14,15 +14,13 @@ using namespace std;
 
 class TestScene :public Scene
 {
-	//测试场景
 
 private:
-	char world[25][50];
-	GameObject* player = nullptr;//主角
-	//char player = '我';//主角
+	string world[14];
+	GameObject * player = nullptr;
 
 private:
-	void BuildWorld(char world[][50]);
+	void BuildWorld(string * world);
 
 public:
 	TestScene();
@@ -31,14 +29,13 @@ public:
 public:
 	void Start() override
 	{
-		//场景初始化
-		
+
 		player->OnStart();
 	}
 
 	void Update() override
 	{
-		//显示UI信息
+		
 		cout << "HP:" << "100" << endl;
 		BuildWorld(world);
 		player->OnUpdate();

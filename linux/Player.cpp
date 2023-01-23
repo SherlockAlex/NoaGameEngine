@@ -2,7 +2,7 @@
 
 bool Player::PlayerControl()
 {
-	//¿ØÖÆÍæ¼ÒÒÆ¶¯
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
 
 	float dx = 0;
 	float dy = 0;
@@ -59,20 +59,11 @@ bool Player::PlayerControl()
 
 void Player::Move()
 {
-	//ÏÔÊ¾Íæ¼ÒµÄÒÆ¶¯,ÀûÓÃÆÁÄ»×ø±êÀ´ÏÔÊ¾Íæ¼ÒÒÆ¶¯
-	//Ê×ÏÈÖªµÀÍæ¼Ò¿ÉÒÔ»î¶¯µÄ·¶Î§
-	//x:(1,24)
-	//y:(1,49)
-	//»ñÈ¡Íæ¼Òµ±Ç°µÄÆÁÄ»Î»ÖÃ
-
-	//Ê×ÏÈ¹â±ê¶¨Î»µ½Íæ¼ÒÎ»ÖÃ£¬È»ºó´òÓ¡×Ö·û
 
 	SetCursorPos(transform->x, transform->y);
 	cout << "O";
 
 	if (PlayerControl()) {
-
-		//Íæ¼ÒÕıÔÚÒÆ¶¯µÄ´úÂë
 		SetCursorPos(transform->x, transform->y);
 	}
 	
