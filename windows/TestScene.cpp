@@ -4,21 +4,11 @@ void TestScene::BuildWorld(string world[])
 {
 
 	//构建世界
-	world->append("********************************\n");
-	world->append("*                              *\n");
-	world->append("*     **************         ***\n");
-	world->append("**        **********************\n");
-	world->append("***                *************\n");
-	world->append("*                          *****\n");
-	world->append("*        *********             *\n");
-	world->append("*                              *\n");
-	world->append("*                              *\n");
-	world->append("*         ********    ****     *\n");
-	world->append("*                              *\n");
-	world->append("********************************\n");
+	
 
 	for (int i = 0; i < world->length();i++) {
 		cout << world[i] << endl;						//打印世界
+		
 	}
 	cout << endl;
 	
@@ -26,6 +16,19 @@ void TestScene::BuildWorld(string world[])
 
 TestScene::TestScene()
 {
+	//cout << "██" << endl;
+	world->append("██████████████████████████████████\n");
+	world->append("██                              ██\n");
+	world->append("██     ██████████████         ████\n");
+	world->append("███        ███████████████████████\n");
+	world->append("████             █████████████████\n");
+	world->append("██                          ██████\n");
+	world->append("██        █████████             ██\n");
+	world->append("██                              ██\n");
+	world->append("██                              ██\n");
+	world->append("██        █████████   █████     ██\n");
+	world->append("██                              ██\n");
+	world->append("██████████████████████████████████\n");
 	if (player==nullptr) {
 		player = new Player();
 	}
