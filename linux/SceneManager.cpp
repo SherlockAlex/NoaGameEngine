@@ -1,10 +1,10 @@
-//×Ô¶¨Òå¿â
+//ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½
 #include "SceneManager.h"
 #include "TestScene.h"
 
 SceneManager::SceneManager()
 {
-	//currentScene = new TestScene();//×¢²á³õÊ¼³¡¾°
+	currentScene = new TestScene();
 }
 
 SceneManager::~SceneManager()
@@ -14,12 +14,12 @@ SceneManager::~SceneManager()
 void SceneManager::Run()
 {
 	if (this->currentScene!=nullptr) {
-		//Èç¹ûµ±Ç°³¡¾°²»Îª¿Õ£¬¾ÍÖ±½ÓÖ´ĞĞ³¡¾°µÄÈë¿Úº¯Êı,µ±È»£¬Õâ¸öµ±Ç°³¡¾°»áÔÚ³õÊ¼»¯µÄÊ±ºò±»´´½¨
+		
 		this->currentScene->GameMain();
 	}
 	else
 	{
-		cout << "µ±Ç°ÓÎÏ·Ã»ÓĞÈÎºÎÄÚÈİ¿ÉÒÔÖ´ĞĞ" << endl;
+		cout << "No scene to run the game!" << endl;
 	}
 	
 }
