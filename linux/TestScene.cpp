@@ -3,27 +3,20 @@
 void TestScene::BuildWorld(string * world)
 {
 
-	//build the game world
-	world->append("*****************************\n");
-	world->append("*                           *\n");
-	world->append("*        **********         *\n");
-	world->append("*        **********         *\n");
-	world->append("*        ********************\n");
-	world->append("***      ********************\n");
-	world->append("***        ******************\n");
-	world->append("***               ***********\n");
-	world->append("***      **       ***********\n");
-	world->append("*************     ***********\n");
-	world->append("*************     ***********\n");
-	world->append("*                           *\n");
-	world->append("*                           *\n");
-	world->append("*****************************\n");
+	
 
 	for(int i=0;i<world->length();i++){
-		cout<<world[i]<<endl;
-		//displayer positon
-		//get player's position
-		//if(x,y!='*') display player
+		//cout<<world[i]<<endl;
+		for (int j = 0; j < world[i].length(); j++)
+		{
+			if(world[i].c_str()[j]=='*'){
+				cout<<pixe;
+			}else{
+				cout<<world[i].c_str()[j];
+			}
+		}
+		
+		
 	}
 
 	//
@@ -32,6 +25,22 @@ void TestScene::BuildWorld(string * world)
 
 TestScene::TestScene()
 {
+	//cout << "????" << endl;
+	world->append("**************************************\n");
+	world->append("****                              ****\n");
+	world->append("****     ****         ****************\n");
+	world->append("****        **************************\n");
+	world->append("******             *******************\n");
+	world->append("****                          ********\n");
+	world->append("****        ***********             **\n");
+	world->append("****                              ****\n");
+	world->append("****                              ****\n");
+	world->append("****        *******   *******     ****\n");
+	world->append("****                              ****\n");
+	world->append("**************************************\n");
+	if (player==nullptr) {
+		player = new Player();
+	}
 	if (player==nullptr) {
 		player = new Player();
 	}

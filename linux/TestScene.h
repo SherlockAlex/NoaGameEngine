@@ -9,6 +9,7 @@
 //
 #include "Scene.h"
 #include "Player.h"
+#include "Graphic.h"
 
 using namespace std;
 
@@ -16,7 +17,7 @@ class TestScene :public Scene
 {
 
 private:
-	string world[14];
+	string * world=new string[14];
 	GameObject * player = nullptr;
 
 private:
