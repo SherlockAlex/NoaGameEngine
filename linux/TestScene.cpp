@@ -25,6 +25,8 @@ void TestScene::BuildWorld(string * world)
 		//get player's position
 		//if(x,y!='*') display player
 	}
+
+	//
 	
 }
 
