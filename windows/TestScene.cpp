@@ -3,12 +3,12 @@
 void TestScene::BuildWorld(int world[][10], int x, int y)
 {
 
-	//构建世界
+	//构建世界,世界和玩家的矩阵相加，然后绘制出来
 
 	for (int i = 0; i < x;i++) {
 		for (int j = 0; j < y;j++) {
 			if (world[i][j]==1) {
-				cout << pixe_black;
+				cout << pixe_white;
 			}
 			if (world[i][j]==0)
 			{
@@ -16,7 +16,7 @@ void TestScene::BuildWorld(int world[][10], int x, int y)
 					cout << "W";//在这里面显示玩家
 					continue;
 				}
-				cout <<pixe_white;
+				cout <<pixe_black;
 			}
 		}
 		cout << endl;//一行结束

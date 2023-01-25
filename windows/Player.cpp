@@ -37,14 +37,8 @@ bool Player::PlayerControl()
 
 void Player::Move()
 {
-
-	//SetCursorPos(transform->x, transform->y);
-	//cout << this->image;
-
 	if (PlayerControl()) {
 
-		//玩家正在移动的代码
-		//SetCursorPos(transform->x, transform->y);
 	}
 	
 	
