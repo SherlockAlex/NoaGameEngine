@@ -7,7 +7,8 @@
 
 using namespace std;
 
-extern string pixe;
+extern string pixe_white;
+extern string pixe_black;
 
 #endif // !NOAGAMEENGINE_GRAPHIC_H
 

@@ -14,7 +14,6 @@ using namespace std;
 class Player :public GameObject
 {
 private:
-	string image = "$";//屏幕中用我来显示字符
 
 	bool PlayerControl();
 	void Move();

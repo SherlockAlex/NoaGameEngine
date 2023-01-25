@@ -7,6 +7,7 @@
 //系统库
 #include <iostream>
 //自定义库
+#include "Graphic.h"
 #include "Scene.h"
 #include "Player.h"
 
@@ -17,12 +18,22 @@ class TestScene :public Scene
 	//测试场景
 
 private:
-	string world[10];
+	int world[10][10] = {
+		{1,1,1,1,1,1,1,1,1,1 },
+		{1,0,0,0,0,0,0,0,0,1 },
+		{1,0,0,0,0,0,0,0,0,1 },
+		{1,1,1,1,1,0,0,0,0,1 },
+		{1,1,1,1,1,0,0,0,0,1 },
+		{1,0,0,0,0,0,0,0,0,1 },
+		{1,0,0,0,0,0,1,1,1,1 },
+		{1,0,0,0,0,0,0,0,0,1 },
+		{1,0,0,0,0,0,0,0,0,1 },
+		{1,1,1,1,1,1,1,1,1,1 },
+	};
 	GameObject* player = nullptr;//主角
-	//char player = '我';//主角
 
 private:
-	void BuildWorld(string world[]);
+	void BuildWorld(int world[][10], int x, int y);
 
 public:
 	TestScene();
@@ -33,16 +44,15 @@ public:
 	{
 		//场景初始化
 		
+
 		player->OnStart();
 	}
 
 	void Update() override
 	{
-		//显示UI信息
 		cout << "HP:" << "100" << endl;
-		BuildWorld(world);
-		//player->OnUpdate();
-		//cout << "哈哈";
+		BuildWorld(world, 10, 10);
+		player->OnUpdate();
 		
 	}
 

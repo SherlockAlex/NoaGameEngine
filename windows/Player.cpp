@@ -10,16 +10,16 @@ bool Player::PlayerControl()
 	switch (GetKeyCode())
 	{
 		case W:
-			dy=1.0f;
+			dx=-1.0f;
 			break;
 		case S:
-			dy = -1.0f;
+			dx = 1.0f;
 			break;
 		case A:
-			dx = -1.0f;
+			dy = 1.0f;
 			break;
 		case D:
-			dx = 1.0f;
+			dy = -1.0f;
 			break;
 	}
 
@@ -59,21 +59,14 @@ bool Player::PlayerControl()
 
 void Player::Move()
 {
-	//显示玩家的移动,利用屏幕坐标来显示玩家移动
-	//首先知道玩家可以活动的范围
-	//x:(1,24)
-	//y:(1,49)
-	//获取玩家当前的屏幕位置
 
-	//首先光标定位到玩家位置，然后打印字符
-
-	SetCursorPos(transform->x, transform->y);
-	cout << this->image;
+	//SetCursorPos(transform->x, transform->y);
+	//cout << this->image;
 
 	if (PlayerControl()) {
 
 		//玩家正在移动的代码
-		SetCursorPos(transform->x, transform->y);
+		//SetCursorPos(transform->x, transform->y);
 	}
 	
 	
