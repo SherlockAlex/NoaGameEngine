@@ -18,7 +18,7 @@ class TestScene :public Scene
 	//²âÊÔ³¡¾°
 
 private:
-	int world[10][10] = {
+	int world[MAXHEIGHT][MAXWIGHT] = {
 		{1,1,1,1,1,1,1,1,1,1 },
 		{1,0,0,0,0,0,0,0,0,1 },
 		{1,0,0,0,0,0,0,0,0,1 },
@@ -33,7 +33,7 @@ private:
 	GameObject* player = nullptr;//Ö÷½Ç
 
 private:
-	void BuildWorld(int world[][10], int x, int y);
+	void BuildWorld(int world[][MAXWIGHT], int x, int y);
 
 public:
 	TestScene();

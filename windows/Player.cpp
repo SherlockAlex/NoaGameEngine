@@ -46,7 +46,9 @@ void Player::Move()
 
 Player::Player()
 {
-	
+	//玩家被创建时
+	transform->x = 3;
+	transform->y = 3;
 }
 
 Player::~Player()

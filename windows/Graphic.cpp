@@ -2,8 +2,9 @@
 
 string pixe_white = "█";
 string pixe_black = " ";//这个表示图像的一个像素点
+string pixe_player = "W";
 
-void Draw(int texture[MAXHWIGHT][MAXHEIGHT], int wight, int height)
+void Draw(int texture[MAXHEIGHT][MAXWIGHT], int wight, int height)
 {
 
 	for (int i = 0; i < wight; i++) {
@@ -14,6 +15,9 @@ void Draw(int texture[MAXHWIGHT][MAXHEIGHT], int wight, int height)
 			if (texture[i][j] == 0)
 			{
 				cout << pixe_black;
+			}
+			if (texture[i][j]==2) {
+				cout << pixe_player;
 			}
 		}
 		cout << endl;//一行结束
