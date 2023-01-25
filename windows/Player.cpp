@@ -30,29 +30,7 @@ bool Player::PlayerControl()
 	}
 
 	transform->x = transform->x + dx;
-	if (transform->x>47) {
-		transform->x = 47;
-	}
-	else
-	{
-		if (transform->x < 1) {
-			transform->x = 1;
-		}
-	}
 	transform->y = transform->y - dy;
-
-	if (transform->y > 24) {
-		transform->y = 24;
-	}
-	else
-	{
-		if (transform->y < 2) {
-			transform->y = 2;
-		}
-	}
-
-	
-
 	return true;
 	
 }
