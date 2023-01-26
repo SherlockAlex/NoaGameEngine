@@ -32,18 +32,15 @@ private:
 	};
 	GameObject* player = nullptr;//Ö÷½Ç
 
+//public:
+//	SceneManager* sceneManager = nullptr;
+
 private:
 	void BuildWorld(int world[][MAXWIGHT], int x, int y);
 
+
 public:
-	TestScene(SceneManager* manager) {
-
-		sceneManager = manager;
-		if (player == nullptr) {
-			player = new Player();
-		}
-
-	};
+	TestScene();
 	~TestScene();
 
 public:

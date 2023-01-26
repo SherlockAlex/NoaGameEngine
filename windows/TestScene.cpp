@@ -37,6 +37,15 @@ void TestScene::BuildWorld(int world[][MAXWIGHT], int x, int y)
 	
 }
 
+TestScene::TestScene() {
+
+	//sceneManager = manager;
+	if (player == nullptr) {
+		player = new Player();
+	}
+
+}
+
 TestScene::~TestScene()
 {
 	delete this;

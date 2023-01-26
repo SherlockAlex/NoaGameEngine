@@ -1,5 +1,9 @@
 #include "TestMenu.h"
 
+TestMenu::TestMenu(SceneManager * _sceneManager) {
+	sceneManager = _sceneManager;
+}
+
 TestMenu::~TestMenu() {
 	delete this;
 }
@@ -50,7 +54,7 @@ void TestMenu::InvokeButtonEvent() {
 	{
 	case 0:
 		//加载下一个场景
-		sceneManager->LoadLevel(new TestScene(this->sceneManager));//传递场景管理器
+		sceneManager->LoadLevel(new TestScene());//传递场景管理器
 		break;
 	case 1:
 		//cout << "继续游戏" << endl;

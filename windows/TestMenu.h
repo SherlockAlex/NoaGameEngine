@@ -14,15 +14,17 @@ using namespace std;
 class TestMenu:public Scene
 {
 	//他是一个初始化菜单
-public:						//定义初始化函数
-	TestMenu(SceneManager* _sceneManager){
-		sceneManager = _sceneManager;
-	}
-	~TestMenu();
+
 
 public:						//定义成员属性
-	int buttonIndex=0;
-	//SceneManager* sceneManager = nullptr;
+	int buttonIndex = 0;
+	SceneManager* sceneManager = nullptr;
+
+public:						//定义初始化函数
+	TestMenu(SceneManager* _sceneManager);
+	~TestMenu();
+
+
 
 public:						//定义成员方法
 	void Display();
