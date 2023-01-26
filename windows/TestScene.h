@@ -36,7 +36,14 @@ private:
 	void BuildWorld(int world[][MAXWIGHT], int x, int y);
 
 public:
-	TestScene();
+	TestScene(SceneManager* manager) {
+
+		sceneManager = manager;
+		if (player == nullptr) {
+			player = new Player();
+		}
+
+	};
 	~TestScene();
 
 public:

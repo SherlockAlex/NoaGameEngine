@@ -15,6 +15,7 @@ class SceneManager
 {
 //这里面有一个列表，用来存放场景
 public:
+	bool canRun = true;
 	Scene* currentScene = nullptr;				//当前场景
 
 public:
@@ -23,7 +24,10 @@ public:
 
 public:
 	void Run();
+	void LoadLevel(Scene * nextScene);							//切换场景
 };
+
+
 
 #endif											// !NOAGAMEENGINE_SCENEMANAGER
 

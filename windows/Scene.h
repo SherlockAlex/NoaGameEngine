@@ -3,9 +3,16 @@
 #define NOAGAMEENGINE_SCENE_H
 
 #include "Application.h"
+#include "SceneManager.h"
 
 class Scene {
-	//有一个对象链表
+	//规定每个Scene都要有Scene Manager
+
+
+public:
+	SceneManager* sceneManager = nullptr;
+
+public:
 
 public:
 	void GameMain();			//场景执行入口函数
