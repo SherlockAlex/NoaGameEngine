@@ -1,9 +1,3 @@
 ﻿  TestScene.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestScene.cpp(24,26): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestScene.cpp(28,26): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestScene.cpp(32,26): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestScene.cpp(36,26): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestScene.cpp(39,24): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestScene.cpp(40,24): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
   NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe

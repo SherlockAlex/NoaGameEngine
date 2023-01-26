@@ -52,7 +52,9 @@ public:
 	{
 		cout << "HP:" << "100" << endl;
 		BuildWorld(world, 10, 10);
+		cout << endl << "Position:" << player->transform->x << "," << player->transform->y;
 		player->OnUpdate();
+		
 		
 	}
 

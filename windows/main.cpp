@@ -3,6 +3,8 @@
 
 int main() 
 {
+	system("color 9C");
+
 	SceneManager* sceneManager = new SceneManager();
 	sceneManager->Run();
 

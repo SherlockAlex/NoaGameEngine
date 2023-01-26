@@ -20,30 +20,15 @@ void TestScene::BuildWorld(int world[][MAXWIGHT], int x, int y)
 	int px = (int)player->transform->x;
 	int py = (int)player->transform->y;
 
-	if (background[(int)player->transform->x+2] == 0) {
-		player->transform->x = px;
-	}
-
-	if (background[(int)player->transform->x -1] == 0) {
-		player->transform->x = px;
-	}
-
-	if (background[(int)player->transform->y + 2] == 0) {
-		player->transform->y = py;
-	}
-
-	if (background[(int)player->transform->y - 1] == 0) {
-		player->transform->y = py;
-	}
-
-	px = player->transform->x;
-	py = player->transform->y;
-
-	
+	/*想办法实现两个图像之间的碰撞检测
+	最简单的方式是，首先玩家输入后，先对transform检测，如果transform不允许，则不返回计算结果，否则就返回计算结果
+	*/
 
 	if (background[px][py]==0) {
 		background[px][py] = 2;
 	}
+
+	//一个场景是多个图像相加的结果
 
 	Draw(background, 10, 10);
 
