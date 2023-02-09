@@ -1,26 +1,12 @@
-﻿  main.cpp
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  Scene.cpp
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(19,7): error C2143: 语法错误: 缺少“;”(在“*”的前面)
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(19,7): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(19,31): error C2238: 意外的标记位于“;”之前
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(27,17): error C2061: 语法错误: 标识符“Scene”
+﻿  Graphic.cpp
   SceneManager.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   TestMenu.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(19,7): error C2143: 语法错误: 缺少“;”(在“*”的前面)
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(19,7): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(19,31): error C2238: 意外的标记位于“;”之前
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(27,17): error C2061: 语法错误: 标识符“Scene”
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestMenu.cpp(57,15): error C2660: “SceneManager::LoadLevel”: 函数不接受 1 个参数
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(27,7): message : 参见“SceneManager::LoadLevel”的声明
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestMenu.cpp(57,15): message : 尝试匹配参数列表“(TestScene *)”时
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   TestScene.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(19,7): error C2143: 语法错误: 缺少“;”(在“*”的前面)
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(19,7): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(19,31): error C2238: 意外的标记位于“;”之前
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneManager.h(27,17): error C2061: 语法错误: 标识符“Scene”
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Application.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   正在生成代码...
+  NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe

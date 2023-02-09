@@ -29,7 +29,9 @@ private:
 		{1,0,0,0,0,0,0,0,0,1 },
 		{1,0,0,0,0,0,0,0,0,1 },
 		{1,1,1,1,1,1,1,1,1,1 },
-	};
+	};//载入图片信息
+
+
 	GameObject* player = nullptr;//主角
 
 //public:
@@ -47,8 +49,6 @@ public:
 	void Start() override
 	{
 		//场景初始化
-		
-
 		player->OnStart();
 	}
 
@@ -56,7 +56,7 @@ public:
 	{
 		cout << "HP:" << "100" << endl;
 		BuildWorld(world, 10, 10);
-		cout << endl << "Position:" << player->transform->x << "," << player->transform->y;
+		cout << endl << "Position:" << player->GetTransform()->x << "," << player->GetTransform()->y;
 		player->OnUpdate();
 		
 		

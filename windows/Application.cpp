@@ -17,7 +17,7 @@ void HideCursor()
 
 void SetCursorPos(float x, float y)
 {
-
+	//通过浮点数设置光标位置
 	COORD coord;
 	coord.X = (int)x;
 	coord.Y = (int)y;

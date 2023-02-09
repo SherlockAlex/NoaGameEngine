@@ -10,16 +10,16 @@ bool Player::PlayerControl()
 	switch (GetKeyCode())
 	{
 		case W:
-			dx=-1.0f;
+			dy=1.0f;
 			break;
 		case S:
-			dx = 1.0f;
+			dy = -1.0f;
 			break;
 		case A:
-			dy = 1.0f;
+			dx = -1.0f;
 			break;
 		case D:
-			dy = -1.0f;
+			dx = 1.0f;
 			break;
 	}
 
@@ -29,8 +29,31 @@ bool Player::PlayerControl()
 		return false;
 	}
 
-	transform->x = transform->x + dx;
-	transform->y = transform->y - dy;
+	/*transform->x = transform->x + dx;
+	transform->y = transform->y - dy;*/
+	//考虑碰撞问题（检测上下左右的像素是否为空，为空才能更新，这个时候就要先获取碰撞信息）
+	if (coliderInfo[0]) {
+		//人物上端有碰撞，不能往上走
+		if(dy>0)
+			dy = 0;
+	}
+	if (coliderInfo[1]) {
+		//人物左端有碰撞，不能往左走
+		if(dx<0)
+			dx = 0;
+	}
+	if (coliderInfo[2]) {
+		//人物下端有碰撞，不能往下走
+		if(dy<0)
+			dy = 0;
+	}
+	if (coliderInfo[3]) {
+		//人物右端有碰撞，不能往右走
+		if(dx>0)
+			dx = 0;
+	}
+
+	SetTransform((GetTransform()->x + dx), (GetTransform()->y + dy));
 	return true;
 	
 }
@@ -47,8 +70,8 @@ void Player::Move()
 Player::Player()
 {
 	//玩家被创建时
-	transform->x = 3;
-	transform->y = 3;
+	//transform->x = 3;
+	//transform->y = 3;
 }
 
 Player::~Player()

@@ -5,8 +5,17 @@
 
 class GameObject
 {
+private:
+	Vector2* transform = nullptr;//默认位置
+	Vector2* trans = new Vector2(0,0);
+
 public:
-	Vector2 * transform=nullptr;//默认位置
+
+	bool coliderInfo[4] = { false,false,false,false };	//物体的碰撞信息，0123分别是上左下右
+
+	Vector2 * GetTransform();			//配置信息用的
+	Vector2 * GetScreenTransform();		//绘制图形用的
+	void SetTransform(float x,float y);
 
 	
 	float bx = 0;				//缓存上一帧坐标

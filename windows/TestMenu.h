@@ -18,10 +18,10 @@ class TestMenu:public Scene
 
 public:						//定义成员属性
 	int buttonIndex = 0;
-	SceneManager* sceneManager = nullptr;
+	SceneManager * sceneManager = nullptr;
 
 public:						//定义初始化函数
-	TestMenu(SceneManager* _sceneManager);
+	TestMenu(SceneManager * _sceneManager);
 	~TestMenu();
 
 
@@ -33,7 +33,6 @@ public:						//定义成员方法
 
 public:
 	void Start() override {
-		//SetButton();
 		Display();
 	}
 

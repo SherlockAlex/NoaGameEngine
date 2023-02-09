@@ -24,7 +24,7 @@ public:
 
 public:
 	void OnStart() override {
-		transform = new Vector2(5, 5);//初始化玩家位置在5，5
+		SetTransform(-5,-5);			//初始化玩家位置在5，5
 	}
 
 	void OnUpdate() override {

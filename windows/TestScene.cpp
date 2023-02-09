@@ -15,25 +15,24 @@ void TestScene::BuildWorld(int world[][MAXWIGHT], int x, int y)
 		}
 	}
 
-	//先限制玩家的活动区域，检测玩家的碰撞
+	//显示玩家位置，检测对物体进行的碰撞检测，这一部分可以重构
 
-	int px = (int)player->transform->x;
-	int py = (int)player->transform->y;
-
-	/*想办法实现两个图像之间的碰撞检测
-	最简单的方式是，首先玩家输入后，先对transform检测，如果transform不允许，则不返回计算结果，否则就返回计算结果
-	*/
+	int px = (int)player->GetScreenTransform()->x;
+	int py = (int)player->GetScreenTransform()->y;
 
 	if (background[px][py]==0) {
 		background[px][py] = 2;
+		//更行人物的碰撞信息
+		player->coliderInfo[0] = (background[px - 1][py] == 1 ? true : false);
+		player->coliderInfo[1] = (background[px][py-1] == 1 ? true : false);
+		player->coliderInfo[2] = (background[px+1][py] == 1 ? true : false);
+		player->coliderInfo[3] = (background[px][py+1] == 1 ? true : false);
 	}
+	
 
 	//一个场景是多个图像相加的结果
 
 	Draw(background, 10, 10);
-
-	
-	
 	
 }
 

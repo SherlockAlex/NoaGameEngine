@@ -1,9 +1,7 @@
-#pragma once
-
 #ifndef NOAGAMEENGINE_SCENEMANAGER
 #define NOAGAMEENGINE_SCENEMANAGER
 
-//系统库
+//系统库(两个模块的头文件不能相互引用)
 #include <iostream>
 
 //自定义库
@@ -16,7 +14,7 @@ class SceneManager
 //这里面有一个列表，用来存放场景
 public:
 	bool canRun = true;
-	Scene* currentScene = nullptr;				//当前场景
+	Scene * currentScene=nullptr;				//当前场景
 
 public:
 	SceneManager();
