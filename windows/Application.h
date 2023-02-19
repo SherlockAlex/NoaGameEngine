@@ -12,5 +12,6 @@ void SetColor(int color);				//设置颜色
 void ResetConsole();					//重置
 void Quit();							//退出程序
 void DelaySecond();						//延时
+void SetPoint();						//设置像素
 
 #endif

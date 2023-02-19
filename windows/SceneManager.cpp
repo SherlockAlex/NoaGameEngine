@@ -6,7 +6,6 @@
 //这些东西是基类
 SceneManager::SceneManager()
 {
-	//currentScene = new TestScene();//注册初始场景，这个场景这么取读取，这个东西是可以修改的
 	currentScene = new TestMenu(this);
 }
 

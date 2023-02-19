@@ -1,4 +1,5 @@
 #include "Graphic.h"
+#include "Application.h"
 
 string pixe_white = "█";
 string pixe_black = " ";//这个表示图像的一个像素点
@@ -7,6 +8,7 @@ string pixe_player = "W";
 void Draw(int texture[MAXHEIGHT][MAXWIGHT], int wight, int height)
 {
 	//绘制图片函数
+	//SetPoint();
 	for (int i = 0; i < wight; i++) {
 		for (int j = 0; j < height; j++) {
 			if (texture[i][j] == 1) {

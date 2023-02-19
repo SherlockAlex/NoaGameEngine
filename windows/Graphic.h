@@ -19,7 +19,7 @@ extern string pixe_white;
 extern string pixe_black;
 extern string pixe_player;
 
-extern void Draw(int texture[MAXHEIGHT][MAXWIGHT],int wight,int height);//函数是绘制图像的
+extern void Draw(int texture[MAXHEIGHT][MAXWIGHT], int wight, int height);//函数是绘制图像的
 
 #endif // !NOAGAMEENGINE_GRAPHIC_H
 

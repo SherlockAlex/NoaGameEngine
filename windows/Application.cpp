@@ -31,6 +31,20 @@ void SetColor(int color) {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 
+void SetPoint() {
+	CONSOLE_FONT_INFOEX cfi;
+	cfi.cbSize = sizeof cfi;
+	cfi.nFont = 0;
+	cfi.dwFontSize.X = 3;			//大小设置
+	cfi.dwFontSize.Y = 5;
+	cfi.FontWeight = FW_THIN;
+	cfi.FontFamily = FF_DONTCARE;
+
+	wcscpy_s(cfi.FaceName, L"Raster");//点阵字体
+
+	SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
+}
+
 void ResetConsole()
 {
 	//重置控制台
