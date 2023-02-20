@@ -143,6 +143,7 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneList.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="TestMenu.h" />
     <ClInclude Include="TestScene.h" />
@@ -156,6 +157,7 @@
     <ClCompile Include="NoaMath.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneList.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="TestMenu.cpp" />
     <ClCompile Include="TestScene.cpp" />

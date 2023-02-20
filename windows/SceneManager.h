@@ -6,6 +6,7 @@
 
 //自定义库
 #include "Scene.h"
+#include "SceneList.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ class SceneManager
 {
 //这里面有一个列表，用来存放场景
 public:
+	sceneList list;
 	bool canRun = true;
 	Scene * currentScene=nullptr;				//当前场景
 
@@ -22,7 +24,8 @@ public:
 
 public:
 	void Run();
-	void LoadLevel(Scene * nextScene);							//切换场景
+	void AddLevel(Scene * level);
+	void LoadLevel(int index);							//切换场景
 };
 
 

@@ -11,6 +11,11 @@ void Scene::GameMain() {
 	}
 }
 
+int Scene::GetID()
+{
+	return id;
+}
+
 void Scene::Start() {
 	//执行在场景被加载时开始执行时执行
 }

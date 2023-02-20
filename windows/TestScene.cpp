@@ -5,8 +5,6 @@ void TestScene::BuildWorld(int world[][MAXWIGHT], int x, int y)
 
 	//构建世界,世界和玩家的矩阵相加，然后绘制出来
 
-	
-
 	int background[10][10];
 
 	for (int i = 0; i < x; i++) {
@@ -36,8 +34,11 @@ void TestScene::BuildWorld(int world[][MAXWIGHT], int x, int y)
 	
 }
 
-TestScene::TestScene() {
+TestScene::TestScene(SceneManager* sceneManager) {
 
+	this->sceneManager = sceneManager;
+	id = 1;//设置id
+	this->sceneManager->AddLevel(this);
 	//sceneManager = manager;
 	if (player == nullptr) {
 		player = new Player();

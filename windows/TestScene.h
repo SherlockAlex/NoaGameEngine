@@ -10,6 +10,7 @@
 #include "Graphic.h"
 #include "Scene.h"
 #include "Player.h"
+#include "SceneManager.h"
 
 using namespace std;
 
@@ -34,15 +35,15 @@ private:
 
 	GameObject* player = nullptr;//Ö÷½Ç
 
-//public:
-//	SceneManager* sceneManager = nullptr;
+public:
+	SceneManager* sceneManager = nullptr;
 
 private:
 	void BuildWorld(int world[][MAXWIGHT], int x, int y);
 
 
 public:
-	TestScene();
+	TestScene(SceneManager* sceneManager);
 	~TestScene();
 
 public:

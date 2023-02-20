@@ -32,11 +32,13 @@ public:						//定义成员方法
 	void InvokeButtonEvent();
 
 public:
-	void Start() override {
+	void Start() override
+	{
 		Display();
 	}
 
-	void Update() override {
+	void Update() override
+	{
 		SetButton();
 		Display();
 	}

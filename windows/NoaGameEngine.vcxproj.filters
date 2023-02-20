@@ -48,6 +48,9 @@
     <ClInclude Include="TestMenu.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SceneList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -81,6 +84,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TestMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
