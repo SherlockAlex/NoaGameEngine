@@ -31,18 +31,19 @@ void SetColor(int color) {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 
-void SetPoint() {
-	CONSOLE_FONT_INFOEX cfi;
-	cfi.cbSize = sizeof cfi;
-	cfi.nFont = 0;
-	cfi.dwFontSize.X = 3;			//大小设置
-	cfi.dwFontSize.Y = 5;
-	cfi.FontWeight = FW_THIN;
-	cfi.FontFamily = FF_DONTCARE;
+void DrawPixel(COLORREF color,int x,int y) {
 
-	wcscpy_s(cfi.FaceName, L"Raster");//点阵字体
+	//COLORREF color=RGB(255,255,255);
 
-	SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
+	//COLORREF colorRef = color;
+
+	//hWnd = CreateWindow(TITLE_NAME, TITLE_NAME, WS_OVERLAPPEDWINDOW, 0, 0, WIN_WIDTH, WIN_HEIGHT, NULL, NULL, hInstance, NULL);
+
+	HWND console = GetConsoleWindow();//得到要控制的窗口
+
+	HDC hdc = GetDC(console);
+
+	SetPixel(hdc, x, y, color);//绘制像素
 }
 
 void ResetConsole()
