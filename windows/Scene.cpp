@@ -6,6 +6,7 @@ void Scene::GameMain() {
 	this->Start();
 	while (1)
 	{
+		//绘制场景信息
 		ResetConsole();		//刷新屏幕
 		this->Update();
 	}

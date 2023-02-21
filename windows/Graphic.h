@@ -5,13 +5,14 @@
 #include <iostream>
 #include <string>
 
+#include "SDL2/SDL.h"
+//描述和所有图形相关的内容
+
 #define MAXHEIGHT 10
 #define MAXWIGHT 10
 
 #define MINHEIGHT 0
 #define MINWIGHT 0
-
-
 
 using namespace std;
 

@@ -1,5 +1,8 @@
 //×Ô¶¨Òå¿â
+#define SDL_MAIN_HANDLED
+
 #include "InitGame.h"
+
 
 int main() 
 {

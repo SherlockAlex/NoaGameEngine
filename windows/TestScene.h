@@ -50,6 +50,8 @@ public:
 	void Start() override
 	{
 		//³¡¾°³õÊ¼»¯
+		surface = sceneManager->GetSurface();
+		renderer = sceneManager->GetRenderer();
 		player->OnStart();
 	}
 

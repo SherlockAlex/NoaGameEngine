@@ -34,6 +34,8 @@ public:						//定义成员方法
 public:
 	void Start() override
 	{
+		surface = sceneManager->GetSurface();
+		renderer = sceneManager->GetRenderer();
 		Display();
 	}
 
