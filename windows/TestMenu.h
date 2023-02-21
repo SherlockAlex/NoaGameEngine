@@ -38,7 +38,8 @@ public:
 		renderer = sceneManager->GetRenderer();
 
 		//下面是一个绘制的例子
-		SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
+		//SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
+		//SDL_RenderDrawPoint(renderer, 10, 10);
 		SDL_RenderClear(renderer);
 		SDL_RenderPresent(renderer);
 		SDL_Delay(5000);
