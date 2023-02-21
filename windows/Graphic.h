@@ -21,7 +21,10 @@ extern string pixe_white;
 extern string pixe_black;
 extern string pixe_player;
 
-extern void DrawTexture(const char * filename, SDL_Renderer* renderer);
+extern void DrawTexture(const char* filename, int width, int height, SDL_Rect* rect, SDL_Renderer* renderer);
+/*绘制图片
+* 需要图片的文件名，宽度，高度，还有rect，还有渲染器
+*/
 
 extern void Draw(int texture[MAXHEIGHT][MAXWIGHT], int wight, int height);//函数是绘制图像的
 

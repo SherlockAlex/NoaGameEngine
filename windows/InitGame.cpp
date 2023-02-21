@@ -27,7 +27,7 @@ void InitGame()
 	SDL_Surface* surface = NULL;
 	SDL_Renderer* renderer = NULL;//创建渲染器
 
-	window = SDL_CreateWindow(gameName,200,200,width,height,SDL_WINDOW_SHOWN);
+	window = SDL_CreateWindow(gameName,200,200,width,height,SDL_WINDOW_FULLSCREEN);//全屏显示
 	surface = SDL_GetWindowSurface(window);
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED|SDL_RENDERER_TARGETTEXTURE);//渲染器采用硬件加速
 

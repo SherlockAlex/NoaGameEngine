@@ -3,12 +3,20 @@
 
 #include "NoaMath.h"
 #include "GameSetting.h"
+#include "Graphic.h"
+#include "SDL2/SDL.h"
 
 class GameObject
 {
 private:
 	Vector2* transform = nullptr;//Ä¬ÈÏÎ»ÖÃ
 	Vector2* trans = new Vector2(0,0);
+
+protected:
+	char* textName;
+	int w;
+	int h;
+	SDL_Rect rect;
 
 public:
 

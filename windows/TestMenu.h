@@ -42,18 +42,20 @@ public:
 		//SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
 		//SDL_RenderDrawPoint(renderer, 10, 10);
 
-		
-
-		
-
 		//surface = IMG_Load("Mario.png");//∂¡»°Õº∆¨
 
-		DrawTexture("Mario.png", renderer);
+		SDL_Rect rect;
+		rect.x = 10;
+		rect.y = 10;
+		rect.w = 24;
+		rect.h = 32;
+
+		DrawTexture("Mario.png",192,256,&rect,renderer);
 
 		//SDL_RenderClear(renderer);
 		//SDL_RenderPresent(renderer);
 
-		SDL_Delay(50000);
+		SDL_Delay(5000);
 		//Display();
 	}
 

@@ -5,7 +5,7 @@ string pixe_white = "█";
 string pixe_black = " ";//这个表示图像的一个像素点
 string pixe_player = "@";
 
-void DrawTexture(const char * filename, SDL_Renderer* renderer)
+void DrawTexture(const char * filename,int width,int height,SDL_Rect * rect, SDL_Renderer* renderer)
 {
 	//加载图片
 	SDL_Surface * surface = IMG_Load(filename);//读取图片
@@ -18,19 +18,13 @@ void DrawTexture(const char * filename, SDL_Renderer* renderer)
 	SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
 
 	SDL_Rect s_rect;
-	SDL_Rect d_rect;
 
 	s_rect.x = 0;
 	s_rect.y = 0;
 	s_rect.w = 192;
 	s_rect.h = 256;
 
-	d_rect.x = 100;
-	d_rect.y = 100;
-	d_rect.w = 48;
-	d_rect.h = 64;
-
-	SDL_RenderCopy(renderer, texture, &s_rect, &d_rect);
+	SDL_RenderCopy(renderer, texture, &s_rect, rect);
 
 	SDL_RenderPresent(renderer);//显示渲染
 }
