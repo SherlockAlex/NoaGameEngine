@@ -6,6 +6,7 @@
 #include <string>
 
 #include "SDL2/SDL.h"
+#include "SDL2/SDL_image.h"
 //描述和所有图形相关的内容
 
 #define MAXHEIGHT 10
@@ -19,6 +20,8 @@ using namespace std;
 extern string pixe_white;
 extern string pixe_black;
 extern string pixe_player;
+
+extern void DrawTexture(const char * filename, SDL_Renderer* renderer);
 
 extern void Draw(int texture[MAXHEIGHT][MAXWIGHT], int wight, int height);//函数是绘制图像的
 

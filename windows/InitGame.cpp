@@ -3,8 +3,8 @@
 #include "TestMenu.h"
 #include "SceneManager.h"
 
-const int width = 480;
-const int height = 270;
+const int width = 960;
+const int height = 540;
 
 const char* gameName = "NoaGameEngine";
 

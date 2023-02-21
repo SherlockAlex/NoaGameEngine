@@ -8,6 +8,7 @@
 #include "SceneManager.h"
 #include "InputSystem.h"
 #include "TestScene.h"
+#include "Graphic.h"
 
 using namespace std;
 
@@ -40,9 +41,19 @@ public:
 		//下面是一个绘制的例子
 		//SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
 		//SDL_RenderDrawPoint(renderer, 10, 10);
-		SDL_RenderClear(renderer);
-		SDL_RenderPresent(renderer);
-		SDL_Delay(5000);
+
+		
+
+		
+
+		//surface = IMG_Load("Mario.png");//读取图片
+
+		DrawTexture("Mario.png", renderer);
+
+		//SDL_RenderClear(renderer);
+		//SDL_RenderPresent(renderer);
+
+		SDL_Delay(50000);
 		//Display();
 	}
 
