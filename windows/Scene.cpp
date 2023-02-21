@@ -4,12 +4,13 @@ void Scene::GameMain() {
 	//在这里面执行所有物件的操作
 
 	this->Start();
-	while (1)
-	{
-		//绘制场景信息
-		ResetConsole();		//刷新屏幕
-		this->Update();
-	}
+	//while (1)
+	//{
+	//	//绘制场景信息
+	//	//ResetConsole();		//刷新屏幕
+	//	this->Update();
+	//	//主循环内容
+	//}
 }
 
 int Scene::GetID()

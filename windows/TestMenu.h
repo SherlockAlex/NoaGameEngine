@@ -36,13 +36,20 @@ public:
 	{
 		surface = sceneManager->GetSurface();
 		renderer = sceneManager->GetRenderer();
-		Display();
+
+		//下面是一个绘制的例子
+		SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
+		SDL_RenderClear(renderer);
+		SDL_RenderPresent(renderer);
+		SDL_Delay(5000);
+		//Display();
 	}
 
 	void Update() override
 	{
-		SetButton();
-		Display();
+		//SetButton();
+		//主循环内容
+		//Display();
 	}
 
 };

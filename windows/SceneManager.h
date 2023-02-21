@@ -29,7 +29,7 @@ public:
 	void SetSurface(SDL_Surface* surface = NULL);
 	SDL_Surface* GetSurface();
 
-	void SetRender(SDL_Renderer * renderer);
+	void SetRenderer(SDL_Renderer * renderer);
 	SDL_Renderer* GetRenderer();
 
 	void Run();

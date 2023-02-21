@@ -20,7 +20,7 @@ SDL_Surface* SceneManager::GetSurface()
 	return surface;
 }
 
-void SceneManager::SetRender(SDL_Renderer* renderer)
+void SceneManager::SetRenderer(SDL_Renderer* renderer)
 {
 	this->renderer = renderer;
 }

@@ -22,12 +22,14 @@ void InitGame()
 //	sceneManager->Run();
 
 	SDL_Init(SDL_INIT_EVERYTHING);//初始化
+
 	SDL_Window* window = NULL;
 	SDL_Surface* surface = NULL;
-	SDL_Renderer* render = NULL;//创建渲染器
+	SDL_Renderer* renderer = NULL;//创建渲染器
 
 	window = SDL_CreateWindow(gameName,200,200,width,height,SDL_WINDOW_SHOWN);
 	surface = SDL_GetWindowSurface(window);
+	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED|SDL_RENDERER_TARGETTEXTURE);//渲染器采用硬件加速
 
 	SceneManager* sceneManager = new SceneManager();
 	{
@@ -37,6 +39,7 @@ void InitGame()
 	}
 	//sceneManager->SetWindow(window);
 	sceneManager->SetSurface(surface);
+	sceneManager->SetRenderer(renderer);
 	sceneManager->Run();//将游戏窗口的控制权限交给sceneManager
 
 
