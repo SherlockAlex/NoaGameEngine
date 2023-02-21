@@ -13,9 +13,11 @@ typedef struct sceneList {
 
 	void append(Scene * item);
 
-	void appendByIndex(int index,Scene * item);
+	//void appendByIndex(int index,Scene * item);
 	
 	void removeAt(int index);
+
+	void sortList();
 
 	void remove(Scene * item);
 

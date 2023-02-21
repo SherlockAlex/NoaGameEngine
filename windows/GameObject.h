@@ -2,6 +2,7 @@
 #define NOAGAMEENGINE_GAMEOBJECT_H
 
 #include "NoaMath.h"
+#include "GameSetting.h"
 
 class GameObject
 {

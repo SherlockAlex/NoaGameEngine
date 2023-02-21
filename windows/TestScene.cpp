@@ -1,6 +1,6 @@
 #include "TestScene.h"
 
-void TestScene::BuildWorld(int world[][MAXWIGHT], int x, int y)
+void TestScene::BuildWorld(byte world[][MAXWIGHT], int x, int y)
 {
 
 	//构建世界,世界和玩家的矩阵相加，然后绘制出来
@@ -15,8 +15,8 @@ void TestScene::BuildWorld(int world[][MAXWIGHT], int x, int y)
 
 	//显示玩家位置，检测对物体进行的碰撞检测，这一部分可以重构
 
-	int px = (int)player->GetScreenTransform()->x;
-	int py = (int)player->GetScreenTransform()->y;
+	int px = (int)roundl(player->GetScreenTransform()->x);//4舍5入
+	int py = (int)roundl(player->GetScreenTransform()->y);
 
 	if (background[px][py]==0) {
 		background[px][py] = 2;
@@ -30,7 +30,7 @@ void TestScene::BuildWorld(int world[][MAXWIGHT], int x, int y)
 
 	//一个场景是多个图像相加的结果
 
-	Draw(background, 10, 10);
+	Draw(background, 10, 10);//绘制图形
 	
 }
 

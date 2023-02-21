@@ -51,6 +51,12 @@
     <ClInclude Include="SceneList.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="InitGame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -87,6 +93,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="SceneList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InitGame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSetting.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

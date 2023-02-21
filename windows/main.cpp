@@ -1,12 +1,9 @@
 //自定义库
-#include "SceneManager.h"
+#include "InitGame.h"
 
 int main() 
 {
-	system("color 9C");
-
-	SceneManager* sceneManager = new SceneManager();
-	sceneManager->Run();
-
+	//system("color 9C");
+	InitGame();
 	return 0;//把程序控制权交出去
 }

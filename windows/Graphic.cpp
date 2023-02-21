@@ -3,7 +3,7 @@
 
 string pixe_white = "█";
 string pixe_black = " ";//这个表示图像的一个像素点
-string pixe_player = "W";
+string pixe_player = "@";
 
 void Draw(int texture[MAXHEIGHT][MAXWIGHT], int wight, int height)
 {

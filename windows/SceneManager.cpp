@@ -1,15 +1,9 @@
 //自定义库
 #include "SceneManager.h"
 
-#include "TestScene.h"
-#include "TestMenu.h"
-
 //这些东西是基类
 SceneManager::SceneManager()
 {
-	//currentScene = new TestMenu(this);
-	new TestMenu(this);
-	new TestScene(this);
 }
 
 SceneManager::~SceneManager()
@@ -34,7 +28,7 @@ void SceneManager::Run()
 
 void SceneManager::AddLevel(Scene* level)
 {
-	list.appendByIndex(level->GetID(), level);
+	list.append(level);
 	if (currentScene == nullptr) {
 		currentScene = list.at(0);
 	}

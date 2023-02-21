@@ -16,18 +16,8 @@ void sceneList::append(Scene * item)
 
 	items[count] = item;
 	count++;
+	sortList();
 
-}
-
-void sceneList::appendByIndex(int index,Scene* item)
-{
-	if (index < 0 || index >= MAXSIZE - 1) {
-		return;
-	}
-	items[index] = item;
-	if (count<index) {
-		count=index;
-	}
 }
 
 void sceneList::removeAt(int index)
@@ -40,6 +30,24 @@ void sceneList::removeAt(int index)
 		items[i] = items[i + 1];
 	}
 	count--;
+}
+
+void sceneList::sortList()
+{
+	//对列表进行排序（根据编号进行排序）,每次插入一个元素后自动执行
+	for (int i = 1; i <= count;i++) {
+		Scene* key=items[i];
+		int j = i - 1;
+		if (key==nullptr) {
+			continue;
+		}
+		while (j >= 0&&items[j]->GetID()>=key->GetID()) {
+			items[j + 1] = items[j];
+			j--;
+		}
+		items[j + 1] = key;
+
+	}
 }
 
 void sceneList::remove(Scene* item)
@@ -56,7 +64,7 @@ void sceneList::remove(Scene* item)
 		index = index + 1;
 	}
 	removeAt(index);
-
+	sortList();
 }
 
 bool sceneList::contain(Scene* item)

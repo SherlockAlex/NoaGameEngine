@@ -19,7 +19,7 @@ class TestScene :public Scene
 	//≤‚ ‘≥°æ∞
 
 private:
-	int world[MAXHEIGHT][MAXWIGHT] = {
+	byte world[MAXHEIGHT][MAXWIGHT] = {
 		{1,1,1,1,1,1,1,1,1,1 },
 		{1,0,0,0,0,0,0,0,0,1 },
 		{1,0,0,0,0,0,0,0,0,1 },
@@ -39,7 +39,7 @@ public:
 	SceneManager* sceneManager = nullptr;
 
 private:
-	void BuildWorld(int world[][MAXWIGHT], int x, int y);
+	void BuildWorld(byte world[][MAXWIGHT], int x, int y);
 
 
 public:

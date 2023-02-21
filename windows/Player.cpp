@@ -10,16 +10,16 @@ bool Player::PlayerControl()
 	switch (GetKeyCode())
 	{
 		case W:
-			dy=1.0f;
+			dy = 1;
 			break;
 		case S:
-			dy = -1.0f;
+			dy = -1;
 			break;
 		case A:
-			dx = -1.0f;
+			dx = -1;
 			break;
 		case D:
-			dx = 1.0f;
+			dx = 1;
 			break;
 	}
 
@@ -28,6 +28,8 @@ bool Player::PlayerControl()
 	if (dx==0&&dy==0) {
 		return false;
 	}
+	dx = dx * 1;
+	dy = dy * 1;
 
 	/*transform->x = transform->x + dx;
 	transform->y = transform->y - dy;*/

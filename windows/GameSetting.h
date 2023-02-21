@@ -1,0 +1,11 @@
+#ifndef NOAGAMEENGINE_GAMESETTING_H
+#define NOAGAMEENGINE_GAMESETTING_H
+//关于游戏的一些基本参数问题
+
+#define WIDTH 10
+#define HEIGHT 10
+
+#define FRAMEFRESHTIME 0.02
+
+#endif
+

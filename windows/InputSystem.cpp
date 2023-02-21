@@ -1,7 +1,5 @@
 #include "InputSystem.h"
 
-
-
 char GetKeyCode() {
 	return _getch();
 }
