@@ -4,6 +4,11 @@ TestMenu::TestMenu(SceneManager * _sceneManager) {
 	sceneManager = _sceneManager;
 	id = 0;
 	sceneManager->AddLevel(this);
+
+	if (player == nullptr) {
+		player = new Player();
+	}
+
 }
 
 TestMenu::~TestMenu() {

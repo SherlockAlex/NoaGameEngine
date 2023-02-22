@@ -15,7 +15,8 @@ using namespace std;
 class TestMenu:public Scene
 {
 	//他是一个初始化菜单
-
+private:
+	Player* player=nullptr;
 
 public:						//定义成员属性
 	int buttonIndex = 0;
@@ -38,30 +39,21 @@ public:
 
 		//surface = sceneManager->GetSurface();
 		this->renderer = gameRenderer;
+		player->OnStart();
+		
 
-		//下面是一个绘制的例子
-		//SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
-		//SDL_RenderDrawPoint(renderer, 10, 10);
+		//rect.x = 10;
+		//rect.y = 10;
+		//rect.w = 24;
+		//rect.h = 32;
 
-		//surface = IMG_Load("Mario.png");//读取图片
+		//DrawTexture("Mario.png",192,256,&rect,renderer);
 
-		//场景的rect
-		rect.x = 10;
-		rect.y = 10;
-		rect.w = 24;
-		rect.h = 32;
-
-		DrawTexture("Mario.png",192,256,&rect,renderer);
-
-		//SDL_RenderClear(renderer);
-		//SDL_RenderPresent(renderer);
-
-		//SDL_Delay(5000);
-		//Display();
 	}
 
 	void Update(NoaEvenet event) override
 	{
+		//player->OnUpdate();
 		//SetButton();
 		//主循环内容
 		//Display();

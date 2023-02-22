@@ -63,7 +63,8 @@ bool Player::PlayerControl()
 void Player::Move()
 {
 	if (PlayerControl()) {
-
+		rect.x = (int)(GetScreenTransform()->x);
+		rect.y = (int)(GetScreenTransform()->y);
 	}
 	
 	
@@ -71,6 +72,7 @@ void Player::Move()
 
 Player::Player()
 {
+	cout << "角色创建成功" << endl;
 	//玩家被创建时
 	//transform->x = 3;
 	//transform->y = 3;

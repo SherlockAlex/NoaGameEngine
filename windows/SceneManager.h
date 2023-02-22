@@ -11,6 +11,7 @@
 
 using namespace std;
 
+/*管理场景与场景类之间的切换事件*/
 class SceneManager
 {
 //这里面有一个列表，用来存放场景

@@ -13,7 +13,9 @@ private:
 	Vector2* trans = new Vector2(0,0);
 
 protected:
-	char* textName;
+	SDL_Renderer * renderer = gameRenderer;
+
+	const char* fileName;
 	int w;
 	int h;
 	SDL_Rect rect;

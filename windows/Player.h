@@ -24,7 +24,12 @@ public:
 
 public:
 	void OnStart() override {
+		fileName = "Mario.png";
+		w = 24;
+		h = 32;
+		DrawTexture(fileName, w, h, &rect, renderer);
 		SetTransform(-5,-5);			//初始化玩家位置在5，5
+		cout << "玩家初始化成功" << endl;
 	}
 
 	void OnUpdate() override {

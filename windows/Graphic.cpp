@@ -21,8 +21,8 @@ void DrawTexture(const char * filename,int width,int height,SDL_Rect * rect, SDL
 
 	s_rect.x = 0;
 	s_rect.y = 0;
-	s_rect.w = 192;
-	s_rect.h = 256;
+	s_rect.w = width;
+	s_rect.h = height;
 
 	SDL_RenderCopy(renderer, texture, &s_rect, rect);
 

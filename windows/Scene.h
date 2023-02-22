@@ -21,6 +21,8 @@ public:
 	void GameMain();
 	int GetID();			//场景执行入口函数
 	virtual void Start();	//在子类中实现
+
+	/*子类实现Update方法，需要每时每刻调用*/
 	virtual void Update(NoaEvenet _event);	//在子类中实现
 	
 };
