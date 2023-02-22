@@ -22,6 +22,8 @@ void GameObject::SetTransform(float x, float y)
 
 GameObject::GameObject()
 {
+	rect.w = w;
+	rect.h = h;
 	if (this->transform==nullptr) {
 		this->transform = new Vector2(0,0);
 	}

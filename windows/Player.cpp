@@ -62,13 +62,8 @@ bool Player::PlayerControl()
 
 void Player::Move()
 {
-	/*if (PlayerControl()) {
-		rect.x = (int)(GetScreenTransform()->x);
-		rect.y = (int)(GetScreenTransform()->y);
-		return;
-	}*/
-	rect.x = 10;
-	rect.y = 10;
+	rect.x = (int)(GetScreenTransform()->x);
+	rect.y = (int)(GetScreenTransform()->y);
 	return;
 	
 }
@@ -77,8 +72,14 @@ Player::Player()
 {
 	
 	fileName = "Mario.png";
-	w = 24;
-	h = 32;
+	w = 192;
+	h = 256;
+
+	rect.x = 10;
+	rect.y = 10;
+	rect.w = 48;
+	rect.h = 64;
+
 	cout << "角色创建成功" << endl;
 	//玩家被创建时
 	//transform->x = 3;

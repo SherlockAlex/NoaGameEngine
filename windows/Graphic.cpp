@@ -34,7 +34,7 @@ void DrawTexture(const char * filename,int width,int height,SDL_Rect * rect, SDL
 
 	SDL_RenderPresent(renderer);//œ‘ æ‰÷»æ
 
-	cout << "‰÷»æÕº∆¨: " << filename << "-≥…π¶" << endl;
+	//cout << "‰÷»æÕº∆¨: " << filename << "-≥…π¶" << endl;
 
 }
 

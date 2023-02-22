@@ -25,8 +25,9 @@ public:
 public:
 	void OnStart() override {
 		
+		
 		DrawTexture(fileName, w, h, &rect, renderer);
-		SetTransform(-5,-5);			//初始化玩家位置在5，5
+		SetTransform(10,10);			//初始化玩家位置在5，5
 		cout << "玩家初始化成功" << endl;
 	}
 
@@ -34,7 +35,9 @@ public:
 		//实时显示
 		//cout << endl << "Position:" << this->GetTransform()->x << "," << this->GetTransform()->y;
 		DrawTexture(fileName, w, h, &rect, renderer);//渲染图片
-		//Move();
+		//cout <<"rect 宽：" << rect.w << endl;
+		//cout << "rect 高：" << rect.h << endl;
+		Move();
 		return;
 	}
 
