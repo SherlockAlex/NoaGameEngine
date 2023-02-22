@@ -1,10 +1,6 @@
 #include "Graphic.h"
 #include "Application.h"
 
-string pixe_white = "█";
-string pixe_black = " ";//这个表示图像的一个像素点
-string pixe_player = "@";
-
 void DrawTexture(const char * filename,int width,int height,SDL_Rect * rect, SDL_Renderer* renderer)
 {
 	//加载图片
@@ -34,31 +30,18 @@ void DrawTexture(const char * filename,int width,int height,SDL_Rect * rect, SDL
 
 	SDL_RenderPresent(renderer);//显示渲染
 
+	//显示完图片后内存释放
 	//cout << "渲染图片: " << filename << "-成功" << endl;
 
 }
 
-void Draw(int texture[MAXHEIGHT][MAXWIGHT], int wight, int height)
+void DrawSprite(Sprite* sprite)
 {
-	//绘制图片函数
-	//SetPoint();
-	//SetPixel();
-	for (int i = 0; i < wight; i++) {
-		for (int j = 0; j < height; j++) {
-			if (texture[i][j] == 1) {
-				cout << pixe_white;
-				//DrawPixel(RGB(255,255,255),i,j);
-			}
-			if (texture[i][j] == 0)
-			{
-				cout << pixe_black;
-				//DrawPixel(RGB(0, 0, 0), i, j);
-			}
-			if (texture[i][j]==2) {
-				cout << pixe_player;
-				//DrawPixel(RGB(128, 128, 128), i, j);
-			}
-		}
-		cout << endl;//一行结束
-	}
+
+	SDL_RenderClear(gameRenderer);
+
+	SDL_RenderCopy(gameRenderer, sprite->texture, sprite->o_rect, sprite->d_rect);
+
+	SDL_RenderPresent(gameRenderer);//显示渲染
+
 }

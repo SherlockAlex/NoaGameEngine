@@ -1,1 +1,20 @@
-﻿  NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe
+﻿  Application.cpp
+  GameObject.cpp
+  Graphic.cpp
+  InitGame.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  InputSystem.cpp
+  Player.cpp
+  Scene.cpp
+  SceneList.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  SceneManager.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  Sprite.cpp
+  TestMenu.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  TestScene.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  main.cpp
+  正在生成代码...
+  NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe

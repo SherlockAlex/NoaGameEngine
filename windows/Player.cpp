@@ -2,6 +2,7 @@
 
 void Player::PlayerControl()
 {
+	//SetScreenTransform(GetScreenTransform()->x, GetScreenTransform()->y + 9.8*0.02*(currentTime/1000));
 	SDL_Event gameEvent;
 	while (SDL_PollEvent(&gameEvent)) {
 		switch (gameEvent.type)
@@ -13,11 +14,11 @@ void Player::PlayerControl()
 		case SDL_KEYDOWN:
 			if (gameEvent.key.keysym.sym == SDLK_RIGHT) {
 				cout << "按键:D" << endl;
-				SetScreenTransform(GetScreenTransform()->x + 10, GetScreenTransform()->y);
+				SetScreenTransform(GetScreenTransform()->x + 12, GetScreenTransform()->y);
 			}
 			if (gameEvent.key.keysym.sym == SDLK_LEFT) {
 				cout << "按键:A" << endl;
-				SetScreenTransform(GetScreenTransform()->x - 10, GetScreenTransform()->y);
+				SetScreenTransform(GetScreenTransform()->x - 12, GetScreenTransform()->y);
 			}
 			break;
 		default:
@@ -52,6 +53,13 @@ Player::Player()
 	rect.y = 10;
 	rect.w = 48;
 	rect.h = 64;
+
+	orect.x = 0;
+	orect.y = 0;
+	orect.w = w;
+	orect.h = h;
+
+	sprite = new Sprite(fileName,&orect,&rect);
 
 	cout << "角色创建成功" << endl;
 	//玩家被创建时

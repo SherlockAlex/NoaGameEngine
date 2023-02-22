@@ -26,6 +26,9 @@ void Scene::GameMain() {
 			}
 			
 		}
+
+		
+
 		//Ö÷Ñ­»·ÄÚÈİ
 		this->Update(&_event);
 

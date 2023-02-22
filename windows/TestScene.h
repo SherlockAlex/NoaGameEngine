@@ -19,27 +19,11 @@ class TestScene :public Scene
 	//测试场景
 
 private:
-	byte world[MAXHEIGHT][MAXWIGHT] = {
-		{1,1,1,1,1,1,1,1,1,1 },
-		{1,0,0,0,0,0,0,0,0,1 },
-		{1,0,0,0,0,0,0,0,0,1 },
-		{1,1,1,1,1,0,0,0,0,1 },
-		{1,1,1,1,1,0,0,0,0,1 },
-		{1,0,0,0,0,0,0,0,0,1 },
-		{1,0,0,0,0,0,1,1,1,1 },
-		{1,0,0,0,0,0,0,0,0,1 },
-		{1,0,0,0,0,0,0,0,0,1 },
-		{1,1,1,1,1,1,1,1,1,1 },
-	};//载入图片信息
-
 
 	GameObject* player = nullptr;//主角
 
 public:
 	SceneManager* sceneManager = nullptr;
-
-private:
-	void BuildWorld(byte world[][MAXWIGHT], int x, int y);
 
 
 public:
@@ -58,7 +42,6 @@ public:
 	void Update(NoaEvenet event) override
 	{
 		cout << "HP:" << "100" << endl;
-		BuildWorld(world, 10, 10);
 		cout << endl << "Position:" << player->GetTransform()->x << "," << player->GetTransform()->y;
 		player->OnUpdate();
 		

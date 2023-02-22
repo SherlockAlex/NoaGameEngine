@@ -15,10 +15,15 @@ private:
 protected:
 	SDL_Renderer * renderer = gameRenderer;
 
+	Sprite* sprite = nullptr;
+
 	const char* fileName;
 	int w;
 	int h;
 	SDL_Rect rect;
+
+	SDL_Rect orect;
+
 
 public:
 

@@ -10,26 +10,6 @@ SceneManager::~SceneManager()
 {
 }
 
-//void SceneManager::SetSurface(SDL_Surface* surface)
-//{
-//	this->surface = surface;
-//}
-
-//SDL_Surface* SceneManager::GetSurface()
-//{
-//	return surface;
-//}
-//
-//void SceneManager::SetRenderer(SDL_Renderer* renderer)
-//{
-//	this->renderer = renderer;
-//}
-//
-//SDL_Renderer* SceneManager::GetRenderer()
-//{
-//	return renderer;
-//}
-
 void SceneManager::Run()
 {
 	//ÔËĞĞÓÎÏ·

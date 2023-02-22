@@ -144,11 +144,13 @@
     <ClInclude Include="InitGame.h" />
     <ClInclude Include="InputSystem.h" />
     <ClInclude Include="NoaMath.h" />
+    <ClInclude Include="Physics.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneList.h" />
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Sprite.h" />
     <ClInclude Include="TestMenu.h" />
     <ClInclude Include="TestScene.h" />
   </ItemGroup>
@@ -161,10 +163,12 @@
     <ClCompile Include="InputSystem.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NoaMath.cpp" />
+    <ClCompile Include="Physics.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneList.cpp" />
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="TestMenu.cpp" />
     <ClCompile Include="TestScene.cpp" />
   </ItemGroup>

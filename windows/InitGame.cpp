@@ -4,7 +4,7 @@
 #include "SceneManager.h"
 
 const int width = 960;
-const int height = 540;
+const int height = 480;
 
 const char* gameName = "NoaGameEngine";
 
