@@ -41,7 +41,9 @@ public:
 
 	//下面两个方法会执行
 
+	/*在对象被创建后执行的第一段代码，只执行一次*/
 	virtual void OnStart() = 0;
+	/*游戏每一帧执行一次*/
 	virtual void OnUpdate() = 0;
 
 };

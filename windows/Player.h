@@ -15,7 +15,9 @@ class Player :public GameObject
 {
 private:
 
-	bool PlayerControl();
+	/*处理玩家键盘控制*/
+	void PlayerControl();
+	/*处理玩家移动事件*/
 	void Move();
 
 public:
@@ -23,11 +25,13 @@ public:
 	~Player();
 
 public:
+
 	void OnStart() override {
 		
 		
 		DrawTexture(fileName, w, h, &rect, renderer);
-		SetTransform(10,10);			//初始化玩家位置在5，5
+		SetScreenTransform(20,200);
+		//SetTransform(10,10);			//初始化玩家位置在5，5
 		cout << "玩家初始化成功" << endl;
 	}
 
