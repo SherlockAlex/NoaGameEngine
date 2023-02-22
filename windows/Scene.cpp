@@ -1,5 +1,7 @@
 #include "Scene.h"
 
+unsigned int currentTime = 0;
+
 void Scene::GameMain() {
 	//在这里面执行所有物件的操作
 
@@ -7,6 +9,7 @@ void Scene::GameMain() {
 	while (1)
 	{
 		SDL_Event _event;
+		currentTime = SDL_GetTicks();
 		//事件循环
 		//绘制场景信息
 		//ResetConsole();		//刷新屏幕

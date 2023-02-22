@@ -12,6 +12,7 @@
 typedef SDL_Event * NoaEvenet;
 
 extern const char* gameName;
+extern unsigned int currentTime;
 
 #endif
 

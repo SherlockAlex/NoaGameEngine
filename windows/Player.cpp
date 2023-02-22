@@ -62,7 +62,10 @@ bool Player::PlayerControl()
 
 void Player::Move()
 {
-	rect.x = (int)(GetScreenTransform()->x);
+	//SetTransform((GetTransform()->x*(currentTime/1000%6)), (GetTransform()->y + 0));
+	//rect.x = 256*(currentTime/1500);
+	//x+=1表示平移一个像素点
+	rect.x = 10*(currentTime/1000);
 	rect.y = (int)(GetScreenTransform()->y);
 	return;
 	
