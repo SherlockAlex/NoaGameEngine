@@ -25,8 +25,10 @@ public:
 	bool coliderInfo[4] = { false,false,false,false };	//物体的碰撞信息，0123分别是上左下右
 
 	Vector2 * GetTransform();			//配置信息用的
-	Vector2 * GetScreenTransform();		//绘制图形用的
+	/*屏幕坐标系，和transform一致*/
+	Vector2 * GetScreenTransform();
 	void SetTransform(float x,float y);
+	void SetScreenTransform(float x, float y);
 
 	
 	float bx = 0;				//缓存上一帧坐标

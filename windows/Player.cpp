@@ -55,7 +55,7 @@ bool Player::PlayerControl()
 			dx = 0;
 	}
 
-	SetTransform((GetTransform()->x + dx), (GetTransform()->y + dy));
+	//SetTransform((GetTransform()->x + dx), (GetTransform()->y + dy));
 	return true;
 	
 }
@@ -65,7 +65,31 @@ void Player::Move()
 	//SetTransform((GetTransform()->x*(currentTime/1000%6)), (GetTransform()->y + 0));
 	//rect.x = 256*(currentTime/1500);
 	//x+=1表示平移一个像素点
-	rect.x = 10*(currentTime/1000);
+	
+	SDL_Event gameEvent;
+	while (SDL_PollEvent(&gameEvent)) {
+		switch (gameEvent.type)
+		{
+		case SDL_QUIT:
+			cout << "退出游戏" << endl;
+			SDL_Quit();
+			break;
+		case SDL_KEYDOWN:
+			if (gameEvent.key.keysym.sym==SDLK_RIGHT) {
+				cout << "按键:D" << endl;
+				SetScreenTransform(GetScreenTransform()->x+10,GetScreenTransform()->y);
+			}
+			if (gameEvent.key.keysym.sym == SDLK_LEFT) {
+				cout << "按键:A" << endl;
+				SetScreenTransform(GetScreenTransform()->x - 10, GetScreenTransform()->y);
+			}
+			break;
+		default:
+			break;
+		}
+	}
+
+	rect.x = (int)(GetScreenTransform()->x);
 	rect.y = (int)(GetScreenTransform()->y);
 	return;
 	

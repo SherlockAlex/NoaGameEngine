@@ -24,9 +24,9 @@ void Scene::GameMain() {
 				
 				break;
 			}
-			//主循环内容
+			
 		}
-
+		//主循环内容
 		this->Update(&_event);
 
 		

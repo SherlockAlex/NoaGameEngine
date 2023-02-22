@@ -20,6 +20,12 @@ void GameObject::SetTransform(float x, float y)
 	transform -> y = x;
 }
 
+void GameObject::SetScreenTransform(float x, float y)
+{
+	transform->x = x;
+	transform->y = y;
+}
+
 GameObject::GameObject()
 {
 	rect.w = w;
