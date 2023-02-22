@@ -50,12 +50,12 @@ public:
 	void Start() override
 	{
 		//³¡¾°³õÊ¼»¯
-		surface = sceneManager->GetSurface();
-		renderer = sceneManager->GetRenderer();
+		//surface = sceneManager->GetSurface();
+		this->renderer = gameRenderer;
 		player->OnStart();
 	}
 
-	void Update() override
+	void Update(NoaEvenet event) override
 	{
 		cout << "HP:" << "100" << endl;
 		BuildWorld(world, 10, 10);

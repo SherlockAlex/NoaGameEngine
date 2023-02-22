@@ -35,8 +35,9 @@ public:						//定义成员方法
 public:
 	void Start() override
 	{
-		surface = sceneManager->GetSurface();
-		renderer = sceneManager->GetRenderer();
+
+		//surface = sceneManager->GetSurface();
+		this->renderer = gameRenderer;
 
 		//下面是一个绘制的例子
 		//SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
@@ -44,7 +45,7 @@ public:
 
 		//surface = IMG_Load("Mario.png");//读取图片
 
-		SDL_Rect rect;
+		//场景的rect
 		rect.x = 10;
 		rect.y = 10;
 		rect.w = 24;
@@ -55,11 +56,11 @@ public:
 		//SDL_RenderClear(renderer);
 		//SDL_RenderPresent(renderer);
 
-		SDL_Delay(5000);
+		//SDL_Delay(5000);
 		//Display();
 	}
 
-	void Update() override
+	void Update(NoaEvenet event) override
 	{
 		//SetButton();
 		//主循环内容

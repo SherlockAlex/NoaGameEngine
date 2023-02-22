@@ -3,20 +3,26 @@
 #define NOAGAMEENGINE_SCENE_H
 
 #include "Application.h"
-#include "SDL2/SDL.h"
+#include "GameSetting.h"
+#include "Graphic.h"
+//#include "SDL2/SDL.h"
 
 class Scene {
 	//规定每个Scene都要有Scene Manager
 protected:
 	int id;
-	SDL_Surface * surface = NULL;//获取当前游戏的窗口，以便获取绘制窗口
-	SDL_Renderer* renderer = NULL;
+	//游戏场景的渲染器
+	SDL_Renderer* renderer=NULL;
+	//场景的rect
+	SDL_Rect rect;
+
 public:
 	
 	void GameMain();
 	int GetID();			//场景执行入口函数
 	virtual void Start();	//在子类中实现
-	virtual void Update();	//在子类中实现
+	virtual void Update(NoaEvenet _event);	//在子类中实现
+	
 };
 
 #endif							// !NOAGAMEENGINE_SCENE_H

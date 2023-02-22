@@ -1,14 +1,14 @@
 #ifndef NOAGAMEENGINE_INITGAME_H
 #define NOAGAMEENGINE_INITGAME_H
 
-#include "SDL2/SDL.h"
-
-extern const int width;
-extern const int height;
-
-extern const char* gameName;
+#include "GameSetting.h"
+#include "Graphic.h"
 
 void InitGame();
+/*
+* 对游戏进行游戏设置初始化
+* 对游戏进行图形初始化
+*/
 
 #endif NOAGAMEENGINE_INITGAME_H
 
