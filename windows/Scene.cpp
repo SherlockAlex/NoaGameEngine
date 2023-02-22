@@ -18,11 +18,14 @@ void Scene::GameMain() {
 				SDL_Quit();
 				break;
 			default:
-				this->Update(&_event);
+				
 				break;
 			}
 			//Ö÷Ñ­»·ÄÚÈİ
 		}
+
+		this->Update(&_event);
+
 		
 	}
 }

@@ -37,8 +37,13 @@ public:
 	void Start() override
 	{
 
+		cout << "当前场景:TestMenu" << endl;
 		//surface = sceneManager->GetSurface();
 		this->renderer = gameRenderer;
+		if (!renderer) {
+			cout << "渲染器加载失败" << endl;
+			return;
+		}
 		player->OnStart();
 		
 
@@ -53,7 +58,8 @@ public:
 
 	void Update(NoaEvenet event) override
 	{
-		//player->OnUpdate();
+		//cout << "正在运行游戏..." << endl;
+		player->OnUpdate();
 		//SetButton();
 		//主循环内容
 		//Display();
