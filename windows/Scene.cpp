@@ -6,9 +6,11 @@ void Scene::GameMain() {
 	//在这里面执行所有物件的操作
 
 	this->Start();
-	while (1)
+	while (run)
 	{
+
 		SDL_Event _event;
+
 		currentTime = SDL_GetTicks();
 		//事件循环
 		//绘制场景信息
@@ -17,23 +19,22 @@ void Scene::GameMain() {
 			switch (_event.type)
 			{
 			case SDL_QUIT:
+				
 				cout << "Quit Game"<<endl;
 				SDL_Quit();
+				run = false;
 				break;
 			default:
 				
 				break;
 			}
-			
 		}
-
-		
-
 		//主循环内容
 		this->Update(&_event);
-
-		
 	}
+
+	cout << "游戏退出" << endl;
+
 }
 
 int Scene::GetID()

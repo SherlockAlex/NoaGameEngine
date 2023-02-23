@@ -5,11 +5,10 @@
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_image.h"
 
-#define WIDTH 10
-#define HEIGHT 10
-#define FRAMEFRESHTIME 0.02
-
 typedef SDL_Event * NoaEvenet;
+
+//游戏是否在运行
+extern bool run;
 
 extern const char* gameName;
 extern unsigned int currentTime;

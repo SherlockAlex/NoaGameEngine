@@ -5,7 +5,7 @@
 #include "Application.h"
 #include "GameSetting.h"
 #include "Graphic.h"
-//#include "SDL2/SDL.h"
+#include "Assets.h"
 
 class Scene {
 	//规定每个Scene都要有Scene Manager

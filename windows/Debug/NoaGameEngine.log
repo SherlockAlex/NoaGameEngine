@@ -1,4 +1,39 @@
-﻿  Player.cpp
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\Player.h(17,7): warning C4305: “初始化”: 从“int”到“char”截断
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\Player.h(17,15): warning C4309: “初始化”: 截断常量值
-  NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe
+﻿  Application.cpp
+  GameObject.cpp
+  GameSetting.cpp
+  Graphic.cpp
+  InitGame.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  InputSystem.cpp
+  main.cpp
+  NoaMath.cpp
+  Physics.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Physics.h(5,22): warning C4305: “初始化”: 从“double”到“float”截断
+  Player.cpp
+  Scene.cpp
+  SceneList.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  SceneManager.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  Sprite.cpp
+  TestMenu.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  TestScene.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  正在生成代码...
+Graphic.obj : error LNK2019: 无法解析的外部符号 _SDL_CreateTextureFromSurface，函数 "void __cdecl DrawTexture(char const *,int,int,struct SDL_Rect *,struct SDL_Renderer *)" (?DrawTexture@@YAXPBDHHPAUSDL_Rect@@PAUSDL_Renderer@@@Z) 中引用了该符号
+Sprite.obj : error LNK2001: 无法解析的外部符号 _SDL_CreateTextureFromSurface
+Graphic.obj : error LNK2019: 无法解析的外部符号 _SDL_RenderClear，函数 "void __cdecl DrawSprite(class Sprite *)" (?DrawSprite@@YAXPAVSprite@@@Z) 中引用了该符号
+Graphic.obj : error LNK2019: 无法解析的外部符号 _SDL_RenderCopy，函数 "void __cdecl DrawSprite(class Sprite *)" (?DrawSprite@@YAXPAVSprite@@@Z) 中引用了该符号
+Graphic.obj : error LNK2019: 无法解析的外部符号 _SDL_RenderPresent，函数 "void __cdecl DrawSprite(class Sprite *)" (?DrawSprite@@YAXPAVSprite@@@Z) 中引用了该符号
+Graphic.obj : error LNK2019: 无法解析的外部符号 _IMG_Load，函数 "void __cdecl DrawTexture(char const *,int,int,struct SDL_Rect *,struct SDL_Renderer *)" (?DrawTexture@@YAXPBDHHPAUSDL_Rect@@PAUSDL_Renderer@@@Z) 中引用了该符号
+Sprite.obj : error LNK2001: 无法解析的外部符号 _IMG_Load
+InitGame.obj : error LNK2019: 无法解析的外部符号 _SDL_CreateWindow，函数 "void __cdecl InitGame(void)" (?InitGame@@YAXXZ) 中引用了该符号
+InitGame.obj : error LNK2019: 无法解析的外部符号 _SDL_CreateRenderer，函数 "void __cdecl InitGame(void)" (?InitGame@@YAXXZ) 中引用了该符号
+InitGame.obj : error LNK2019: 无法解析的外部符号 _SDL_Init，函数 "void __cdecl InitGame(void)" (?InitGame@@YAXXZ) 中引用了该符号
+Player.obj : error LNK2019: 无法解析的外部符号 _SDL_PollEvent，函数 "private: void __thiscall Player::PlayerControl(void)" (?PlayerControl@Player@@AAEXXZ) 中引用了该符号
+Scene.obj : error LNK2001: 无法解析的外部符号 _SDL_PollEvent
+Player.obj : error LNK2019: 无法解析的外部符号 _SDL_Quit，函数 "private: void __thiscall Player::PlayerControl(void)" (?PlayerControl@Player@@AAEXXZ) 中引用了该符号
+Scene.obj : error LNK2001: 无法解析的外部符号 _SDL_Quit
+Scene.obj : error LNK2019: 无法解析的外部符号 _SDL_GetTicks，函数 "public: void __thiscall Scene::GameMain(void)" (?GameMain@Scene@@QAEXXZ) 中引用了该符号
+D:\Work\Learn\NoaGameEngine\Debug\NoaGameEngine.exe : fatal error LNK1120: 11 个无法解析的外部命令

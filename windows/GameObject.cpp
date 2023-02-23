@@ -26,6 +26,11 @@ void GameObject::SetScreenTransform(float x, float y)
 	transform->y = y;
 }
 
+Sprite* GameObject::GetSprite()
+{
+	return sprite;
+}
+
 GameObject::GameObject()
 {
 	rect.w = w;

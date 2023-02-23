@@ -138,6 +138,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="Assets.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameSetting.h" />
     <ClInclude Include="Graphic.h" />
@@ -156,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Assets.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameSetting.cpp" />
     <ClCompile Include="Graphic.cpp" />

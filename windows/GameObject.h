@@ -5,6 +5,7 @@
 #include "GameSetting.h"
 #include "Graphic.h"
 #include "SDL2/SDL.h"
+#include "Assets.h"
 
 class GameObject
 {
@@ -35,6 +36,7 @@ public:
 	void SetTransform(float x,float y);
 	void SetScreenTransform(float x, float y);
 
+	Sprite* GetSprite();
 	
 	float bx = 0;				//»º´æÉÏÒ»Ö¡×ø±ê
 	float by = 0;

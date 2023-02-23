@@ -62,3 +62,8 @@ Sprite::Sprite(const char* filename, SDL_Rect* o_rect, SDL_Rect* d_rect)
 		//return;
 	}
 }
+
+void SpriteList::Append(Sprite* sprites)
+{
+	//添加图片到链表中
+}

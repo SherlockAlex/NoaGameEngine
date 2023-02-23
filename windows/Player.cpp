@@ -3,6 +3,7 @@
 void Player::PlayerControl()
 {
 	//SetScreenTransform(GetScreenTransform()->x, GetScreenTransform()->y + 9.8*0.02*(currentTime/1000));
+
 	SDL_Event gameEvent;
 	while (SDL_PollEvent(&gameEvent)) {
 		switch (gameEvent.type)
@@ -10,14 +11,15 @@ void Player::PlayerControl()
 		case SDL_QUIT:
 			cout << "退出游戏" << endl;
 			SDL_Quit();
+			run = false;
 			break;
 		case SDL_KEYDOWN:
 			if (gameEvent.key.keysym.sym == SDLK_RIGHT) {
-				cout << "按键:D" << endl;
+				cout << "按键:->" << endl;
 				SetScreenTransform(GetScreenTransform()->x + 12, GetScreenTransform()->y);
 			}
 			if (gameEvent.key.keysym.sym == SDLK_LEFT) {
-				cout << "按键:A" << endl;
+				cout << "按键:<-" << endl;
 				SetScreenTransform(GetScreenTransform()->x - 12, GetScreenTransform()->y);
 			}
 			break;
@@ -34,7 +36,7 @@ void Player::Move()
 	//rect.x = 256*(currentTime/1500);
 	//x+=1表示平移一个像素点
 	
-	PlayerControl();//调用玩家控制
+	PlayerControl();			//调用玩家控制
 
 	rect.x = (int)(GetScreenTransform()->x);
 	rect.y = (int)(GetScreenTransform()->y);
@@ -45,7 +47,7 @@ void Player::Move()
 Player::Player()
 {
 	
-	fileName = "Mario.png";
+	fileName = PLAYER_IMG;		//加载玩家图片
 	w = 192;
 	h = 256;
 
@@ -62,11 +64,10 @@ Player::Player()
 	sprite = new Sprite(fileName,&orect,&rect);
 
 	cout << "角色创建成功" << endl;
-	//玩家被创建时
-	//transform->x = 3;
-	//transform->y = 3;
 }
 
 Player::~Player()
 {
+	SDL_FreeSurface(sprite->surface);
+	SDL_DestroyTexture(sprite->texture);
 }

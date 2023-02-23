@@ -16,6 +16,13 @@ class TestMenu:public Scene
 {
 	//他是一个初始化菜单
 private:
+	Sprite* sprite=nullptr;
+
+	Sprite* sprites[2];
+
+	SDL_Rect orect;
+	SDL_Rect drect;
+
 	Player* player=nullptr;
 
 public:						//定义成员属性
@@ -29,8 +36,6 @@ public:						//定义初始化函数
 
 
 public:						//定义成员方法
-	void Display();
-	void SetButton();
 	void InvokeButtonEvent();
 
 public:
@@ -45,24 +50,13 @@ public:
 			return;
 		}
 		player->OnStart();
-		
-
-		//rect.x = 10;
-		//rect.y = 10;
-		//rect.w = 24;
-		//rect.h = 32;
-
-		//DrawTexture("Mario.png",192,256,&rect,renderer);
 
 	}
 
 	void Update(NoaEvenet event) override
 	{
-		//cout << "正在运行游戏..." << endl;
+		DrawScene(sprites,2);
 		player->OnUpdate();
-		//SetButton();
-		//主循环内容
-		//Display();
 	}
 
 };

@@ -27,4 +27,15 @@ public:
 
 };
 
+
+/*关于精灵的数组*/
+typedef struct SpriteList {
+	Sprite* sprites;
+	int count;
+
+	void Append(Sprite * sprites);
+
+};
+
+
 #endif

@@ -29,14 +29,14 @@ public:
 	void OnStart() override {
 		//DrawTexture(fileName, w, h, &rect, renderer);
 		SetScreenTransform(20,200);
-		DrawSprite(sprite);
+		//DrawSprite(sprite);
 		//SetTransform(10,10);			//初始化玩家位置在5，5
 		cout << "玩家初始化成功" << endl;
 	}
 
 	void OnUpdate() override {
 		//实时显示
-		DrawSprite(sprite);
+		//DrawSprite(sprite);
 		Move();
 		return;
 	}

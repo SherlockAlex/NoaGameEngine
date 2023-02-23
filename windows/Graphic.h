@@ -3,7 +3,6 @@
 #define NOAGAMEENGINE_GRAPHIC_H
 
 #include <iostream>
-#include <string>
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_image.h"
 
@@ -34,6 +33,12 @@ extern void DrawTexture(const char* filename, int width, int height, SDL_Rect* r
 
 /*绘制精灵*/
 extern void DrawSprite(Sprite * sprite);
+
+/*绘制场景
+一个场景有许多的图片组成，将每一帧的图片先相加，然后在一起绘制
+一个图像的数组，一个是数组的长度
+*/
+extern void DrawScene(Sprite * sprites[],int count);
 
 #endif // !NOAGAMEENGINE_GRAPHIC_H
 

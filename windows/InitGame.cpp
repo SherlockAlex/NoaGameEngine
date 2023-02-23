@@ -3,6 +3,7 @@
 #include "TestMenu.h"
 #include "SceneManager.h"
 
+/*窗口大小*/
 const int width = 960;
 const int height = 480;
 
@@ -10,11 +11,15 @@ const char* gameName = "NoaGameEngine";
 
 SDL_Window* gameWindow = NULL;
 SDL_Renderer * gameRenderer = NULL;
+bool run = true;
 
 void InitGame()
 {
 
+	//初始化图形化窗口
 	SDL_Init(SDL_INIT_EVERYTHING);//初始化
+	
+	run = true;
 
 	gameWindow = SDL_CreateWindow(gameName, 200, 200, width, height, SDL_WINDOW_SHOWN);//全屏显示;
 
@@ -26,7 +31,13 @@ void InitGame()
 		new TestScene(sceneManager);
 	}
 
-
 	sceneManager->Run();//将游戏窗口的控制权限交给sceneManager
+
+	//释放内存资源
+	SDL_DestroyWindow(gameWindow);
+	SDL_DestroyRenderer(gameRenderer);
+	SDL_Quit();
+
+	return;
 
 }
