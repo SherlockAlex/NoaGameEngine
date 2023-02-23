@@ -82,6 +82,7 @@
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>D:\SDL2\msvc(VS)\SDL2-2.26.0-allinone\lib\x64;$(LibraryPath)</LibraryPath>
     <ExternalIncludePath>D:\SDL2\msvc(VS)\SDL2-2.26.0-allinone\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
