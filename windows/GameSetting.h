@@ -5,7 +5,7 @@
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_image.h"
 
-typedef SDL_Event * NoaEvenet;
+typedef SDL_Event * NoaEvent;
 
 //游戏是否在运行
 extern bool run;

@@ -6,29 +6,32 @@ void Player::PlayerControl()
 {
 	//SetScreenTransform(GetScreenTransform()->x, GetScreenTransform()->y + 9.8*0.02*(currentTime/1000));
 
-	SDL_Event gameEvent;
-	while (SDL_PollEvent(&gameEvent)) {
-		switch (gameEvent.type)
+	while (SDL_PollEvent(gameEvent)) {
+		switch (gameEvent->type)
 		{
+
 		case SDL_QUIT:
-			cout << "退出游戏" << endl;
 			SDL_Quit();
 			run = false;
 			break;
 		case SDL_KEYDOWN:
-			if (gameEvent.key.keysym.sym == SDLK_RIGHT) {
-				cout << "按键:->" << endl;
-				SetScreenTransform(GetScreenTransform()->x + 12, GetScreenTransform()->y);
+			if (gameEvent->key.keysym.sym == SDLK_RIGHT) {
+				//cout << "按键:->" << endl;
+				transform->x = transform->x + 9;
+				//SetScreenTransform(GetScreenTransform()->x + 9000*deltaTime, GetScreenTransform()->y);
 			}
-			if (gameEvent.key.keysym.sym == SDLK_LEFT) {
-				cout << "按键:<-" << endl;
-				SetScreenTransform(GetScreenTransform()->x - 12, GetScreenTransform()->y);
+			if (gameEvent->key.keysym.sym == SDLK_LEFT) {
+				//cout << "按键:<-" << endl;
+				transform->x = transform->x - 9;
+				//SetScreenTransform(GetScreenTransform()->x - 9000* deltaTime, GetScreenTransform()->y);
 			}
 			break;
 		default:
 			break;
 		}
 	}
+
+	
 	return;
 }
 
@@ -40,8 +43,8 @@ void Player::Move()
 	
 	PlayerControl();			//调用玩家控制
 
-	rect.x = (int)(GetScreenTransform()->x);
-	rect.y = (int)(GetScreenTransform()->y);
+	rect.x = (int)transform->x;
+	rect.y = (int)(transform->y);
 	return;
 	
 }

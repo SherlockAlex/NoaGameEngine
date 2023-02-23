@@ -28,7 +28,7 @@ public:
 	virtual void Start();	//在子类中实现
 
 	/*子类实现Update方法，需要每时每刻调用*/
-	virtual void Update(NoaEvenet _event);	//在子类中实现
+	virtual void Update();	//在子类中实现
 	
 };
 

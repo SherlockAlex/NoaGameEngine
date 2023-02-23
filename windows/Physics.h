@@ -6,7 +6,9 @@ float grivaty = -9.81;
 
 class RigidBody {
 	//物理对象
-
+public:
+	float mess;
+	
 };
 
 

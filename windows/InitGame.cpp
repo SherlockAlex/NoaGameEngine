@@ -38,6 +38,8 @@ void InitGame()
 	SDL_DestroyRenderer(gameRenderer);
 	SDL_Quit();
 
+	cout << "释放游戏资源" << endl;
+
 	return;
 
 }

@@ -16,14 +16,11 @@ void SceneManager::Run()
 	if (!canRun) {
 		return;
 	}
-	if (this->currentScene!=nullptr) {
+	if (this->currentScene==nullptr) {
 		//如果当前场景不为空，就直接执行场景的入口函数,当然，这个当前场景会在初始化的时候被创建
-		this->currentScene->GameMain();//这个东西要放弃
-	}
-	else
-	{
 		cout << "当前游戏没有任何内容可以执行" << endl;
 	}
+	this->currentScene->GameMain();//这个东西要放弃
 	
 }
 
@@ -36,9 +33,11 @@ void SceneManager::AddLevel(Scene* level)
 }
 
 void SceneManager::LoadLevel(int index) {
+
+	cout << "正在加载场景: " << index << endl;
 	canRun = false;
 	currentScene = list.at(index);
 	canRun = true;
-	system("cls");
+	cout << "场景: " << index << "加载完成" << endl;
 	Run();//从新执行Run
 }

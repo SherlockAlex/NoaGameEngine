@@ -55,7 +55,7 @@ public:
 
 	}
 
-	void Update(NoaEvenet event) override
+	void Update() override
 	{
 		//cout << "正在运行：TestMenu" << endl;
 		DrawScene(sprites,2);

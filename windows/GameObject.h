@@ -11,10 +11,11 @@ class GameObject
 {
 private:
 	/*游戏物品的坐标位置*/
-	Vector2* transform = nullptr;
+	//Vector2* transform = nullptr;
 	Vector2* trans = new Vector2(0,0);
 
 protected:
+	Vector2* transform = nullptr;
 	SDL_Renderer * renderer = gameRenderer;
 
 	Sprite* sprite = nullptr;
@@ -36,7 +37,8 @@ public:
 	Vector2 * GetScreenTransform();
 	void SetTransform(float x,float y);
 	void SetScreenTransform(float x, float y);
-
+	/*更新碰撞信息*/
+	void UpdateColiderInfo();
 	Sprite* GetSprite();
 	
 	float bx = 0;				//缓存上一帧坐标

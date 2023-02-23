@@ -79,8 +79,9 @@
     <LibraryPath>D:\SDL2\msvc%28VS%29\SDL2-2.26.0-allinone\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>D:\SDL2\msvc(VS)\SDL2-2.26.0-allinone\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>D:\SDL2\msvc(VS)\SDL2-2.26.0-allinone\lib\x64;$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>D:\SDL2\msvc(VS)\SDL2-2.26.0-allinone\include;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
