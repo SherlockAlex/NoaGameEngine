@@ -11,7 +11,7 @@ typedef SDL_Event * NoaEvent;
 extern bool run;
 
 extern const char* gameName;
-extern unsigned int currentTime;
+extern unsigned int frameStart;
 extern float deltaTime;
 
 #endif

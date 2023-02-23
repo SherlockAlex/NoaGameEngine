@@ -14,16 +14,28 @@ void Player::PlayerControl()
 			SDL_Quit();
 			run = false;
 			break;
+		
 		case SDL_KEYDOWN:
-			if (gameEvent->key.keysym.sym == SDLK_RIGHT) {
-				//cout << "°´¼ü:->" << endl;
+			switch (gameEvent->key.keysym.sym)
+			{
+			case SDLK_RIGHT:
 				transform->x = transform->x + 9;
-				//SetScreenTransform(GetScreenTransform()->x + 9000*deltaTime, GetScreenTransform()->y);
-			}
-			if (gameEvent->key.keysym.sym == SDLK_LEFT) {
-				//cout << "°´¼ü:<-" << endl;
+				break;
+			case SDLK_LEFT:
 				transform->x = transform->x - 9;
-				//SetScreenTransform(GetScreenTransform()->x - 9000* deltaTime, GetScreenTransform()->y);
+				break;
+			case SDLK_ESCAPE:
+				run = false;
+				SDL_Quit();
+				break;
+			case SDLK_d:
+				transform->x = transform->x + 9;
+				break;
+			case SDLK_a:
+				transform->x = transform->x + 9;
+				break;
+			default:
+				break;
 			}
 			break;
 		default:

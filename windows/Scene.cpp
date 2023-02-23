@@ -1,40 +1,33 @@
 #include "Scene.h"
 #include "InputSystem.h"
 
-unsigned int currentTime = 0;
+const int FPS = 60;
+const int frameDelay = 1000 / FPS;
+unsigned int frameStart = 0;
 float deltaTime = 0;
 NoaEvent gameEvent=NULL;
 
 void Scene::GameMain() {
+	frameStart = 0;
+	deltaTime = 0;
 	//在这里面执行所有物件的操作
-
-	int oldTime = 0;
+	SDL_Event _event;
 	this->Start();
 	while (run)
 	{
-		SDL_Event _event;
+		
 		gameEvent = &_event;
 
-		currentTime = SDL_GetTicks();
-		deltaTime = (currentTime+1.0 - oldTime) /1000;
-		oldTime = currentTime;
+		frameStart = SDL_GetTicks();
 
-		while (SDL_PollEvent(gameEvent)) {
-			switch (gameEvent->type)
-			{
-			case SDL_QUIT:
-
-				cout << "Quit Game" << endl;
-				SDL_Quit();
-				run = false;
-				break;
-			default:
-				break;
-			}
-		}
-		
-		//主循环内容
 		this->Update();
+
+		//currentTime = SDL_GetTicks();
+		deltaTime = SDL_GetTicks() - frameStart;
+		
+		if (frameDelay>deltaTime) {
+			SDL_Delay(frameDelay-deltaTime);
+		}
 	}
 
 }
