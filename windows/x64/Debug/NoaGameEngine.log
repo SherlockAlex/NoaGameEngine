@@ -1,8 +1,1 @@
-﻿  InitGame.cpp
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
-  TestMenu.cpp
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\SceneList.h(28,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
-  正在生成代码...
-  NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Debug\NoaGameEngine.exe
+﻿D:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MakeFile.Targets(43,5): warning MSB8005: 属性“NMakeBuildCommandLine”不存在。  正在跳过...

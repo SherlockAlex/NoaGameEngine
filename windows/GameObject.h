@@ -10,7 +10,8 @@
 class GameObject
 {
 private:
-	Vector2* transform = nullptr;//默认位置
+	/*游戏物品的坐标位置*/
+	Vector2* transform = nullptr;
 	Vector2* trans = new Vector2(0,0);
 
 protected:

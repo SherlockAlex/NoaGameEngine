@@ -2,6 +2,8 @@
 #ifndef NOAGAMEENGINE_GRAPHIC_H
 #define NOAGAMEENGINE_GRAPHIC_H
 
+/*这个作为图像处理的模块，游戏所有的图形操作都要在这个下面进行*/
+
 #include <iostream>
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_image.h"

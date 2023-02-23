@@ -1,6 +1,8 @@
 #ifndef NOAGAMEENGINE_NOAMATH_H
 #define NOAGAMEENGINE_NOAMATH_H
 
+/*这个模块主要负责游戏的数学的部分*/
+
 #include <math.h>
 
 typedef struct Vector2 {

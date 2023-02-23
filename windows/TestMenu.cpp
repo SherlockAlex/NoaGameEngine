@@ -11,8 +11,8 @@ TestMenu::TestMenu(SceneManager * _sceneManager) {
 
 	drect.x = 0;
 	drect.y = 0;
-	drect.w = 480;
-	drect.h = 320;
+	drect.w = 1920;
+	drect.h = 1080;
 
 	sprite = new Sprite(MAP_IMG,&orect,&drect);
 

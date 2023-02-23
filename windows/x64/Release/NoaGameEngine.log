@@ -1,0 +1,31 @@
+﻿  Application.cpp
+  Assets.cpp
+  GameObject.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameSetting.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  GameSetting.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameSetting.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  Graphic.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Graphic.h(8,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  InitGame.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameSetting.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  InputSystem.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\InputSystem.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  main.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameSetting.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  NoaMath.cpp
+  Physics.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Physics.h(5,22): warning C4305: “初始化”: 从“double”到“float”截断
+  Player.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameSetting.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  Scene.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameSetting.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  SceneList.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameSetting.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  SceneManager.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameSetting.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  Sprite.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(4,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  TestMenu.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameSetting.h(5,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory
+  TestScene.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Graphic.h(8,10): fatal  error C1083: 无法打开包括文件: “SDL2/SDL.h”: No such file or directory

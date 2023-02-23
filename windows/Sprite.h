@@ -3,6 +3,7 @@
 
 #include "SDL2/SDL.h"
 
+//一个精灵类型
 class Sprite
 {
 public:

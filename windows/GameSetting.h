@@ -12,6 +12,7 @@ extern bool run;
 
 extern const char* gameName;
 extern unsigned int currentTime;
+extern float deltaTime;
 
 #endif
 

@@ -2,6 +2,8 @@
 #ifndef NOAGAMEENGIN_TESTMENU_H
 #define NOAGAMEENGIN_TESTMENU_H
 
+/*这个是一个测试场景，用来测试游戏引擎API用的*/
+
 #include <iostream>
 
 #include "Scene.h"
@@ -55,8 +57,10 @@ public:
 
 	void Update(NoaEvenet event) override
 	{
+		//cout << "正在运行：TestMenu" << endl;
 		DrawScene(sprites,2);
 		player->OnUpdate();
+		
 	}
 
 };

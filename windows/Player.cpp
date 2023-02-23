@@ -1,4 +1,6 @@
 #include "Player.h"
+#include "Application.h"
+#include "InputSystem.h"
 
 void Player::PlayerControl()
 {
