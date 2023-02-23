@@ -57,10 +57,6 @@ public:
 
 	void Update() override
 	{
-		if (deltaTime>5) {
-			cout << deltaTime << endl;
-			return;
-		}
 		//cout << "正在运行：TestMenu" << endl;
 		DrawScene(sprites,2);
 		player->OnUpdate();
