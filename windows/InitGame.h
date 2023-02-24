@@ -10,5 +10,5 @@
 */
 void InitGame();
 
-#endif NOAGAMEENGINE_INITGAME_H
+#endif // !NOAGAMEENGINE_INITGAME_H
 

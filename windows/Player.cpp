@@ -32,7 +32,7 @@ void Player::PlayerControl()
 				transform->x = transform->x + 9;
 				break;
 			case SDLK_a:
-				transform->x = transform->x + 9;
+				transform->x = transform->x - 9;
 				break;
 			default:
 				break;
