@@ -1,8 +1,7 @@
 #include "TestMenu.h"
 
-TestMenu::TestMenu(SceneManager * _sceneManager) {
-	sceneManager = _sceneManager;
-	id = 0;
+TestMenu::TestMenu(SceneManager * _sceneManager):Scene(0,_sceneManager) {
+	
 
 	orect.x = 0;
 	orect.y = 0;
@@ -17,7 +16,7 @@ TestMenu::TestMenu(SceneManager * _sceneManager) {
 	sprite = new Sprite(MAP_IMG,&orect,&drect);
 
 
-	sceneManager->AddLevel(this);
+	
 
 	if (player == nullptr) {
 		player = new Player();
@@ -32,21 +31,12 @@ TestMenu::TestMenu(SceneManager * _sceneManager) {
 
 }
 
-TestMenu::~TestMenu() {
+TestMenu::~TestMenu(){
 	delete this;
 	SDL_FreeSurface(this->sprite->surface);
 	SDL_DestroyTexture(this->sprite->texture);
 }
 
 void TestMenu::InvokeButtonEvent() {
-	switch (buttonIndex)
-	{
-	case 0:
-		//加载下一个场景
-		sceneManager->LoadLevel(1);//传递场景管理器
-		break;
-	case 1:
-		//cout << "继续游戏" << endl;
-		break;
-	}
+	
 }

@@ -6,8 +6,7 @@
 
 #include <iostream>
 
-#include "Scene.h"
-#include "SceneManager.h"
+#include "GameScene.h"
 #include "InputSystem.h"
 #include "TestScene.h"
 #include "Graphic.h"
@@ -18,23 +17,11 @@ class TestMenu:public Scene
 {
 	//他是一个初始化菜单
 private:
-	Sprite* sprite=nullptr;
-
-	Sprite* sprites[2];
-
-	SDL_Rect orect;
-	SDL_Rect drect;
-
 	Player* player=nullptr;
 
-public:						//定义成员属性
-	int buttonIndex = 0;
-	SceneManager * sceneManager = nullptr;
-
 public:						//定义初始化函数
-	TestMenu(SceneManager * _sceneManager);
+	TestMenu(SceneManager* _sceneManager);
 	~TestMenu();
-
 
 
 public:						//定义成员方法
@@ -47,10 +34,6 @@ public:
 		cout << "当前场景:TestMenu" << endl;
 		//surface = sceneManager->GetSurface();
 		this->renderer = gameRenderer;
-		if (!renderer) {
-			cout << "渲染器加载失败" << endl;
-			return;
-		}
 		player->OnStart();
 
 	}

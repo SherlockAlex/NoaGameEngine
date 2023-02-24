@@ -1,5 +1,5 @@
 //自定义库
-#include "SceneManager.h"
+#include "GameScene.h"
 
 //这些东西是基类
 SceneManager::SceneManager()

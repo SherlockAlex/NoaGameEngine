@@ -148,6 +148,7 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="Assets.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameScene.h" />
     <ClInclude Include="GameSetting.h" />
     <ClInclude Include="Graphic.h" />
     <ClInclude Include="InitGame.h" />
@@ -156,9 +157,6 @@
     <ClInclude Include="Physics.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="SceneList.h" />
-    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="TestMenu.h" />
     <ClInclude Include="TestScene.h" />

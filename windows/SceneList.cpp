@@ -1,4 +1,4 @@
-#include "SceneList.h"
+#include "GameScene.h"
 
 sceneList::sceneList()
 {
@@ -11,6 +11,9 @@ void sceneList::append(Scene * item)
 	//插入元素到列表中
 	if (count>=MAXSIZE-1)
 	{
+		return;
+	}
+	if (contain(item)) {
 		return;
 	}
 

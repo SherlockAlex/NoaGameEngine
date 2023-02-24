@@ -1,7 +1,7 @@
 #include "InitGame.h"
 #include "TestScene.h"
 #include "TestMenu.h"
-#include "SceneManager.h"
+#include "GameScene.h"
 
 /*´°¿Ú´óÐ¡*/
 const int width = 960;

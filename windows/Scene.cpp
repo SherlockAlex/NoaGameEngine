@@ -1,4 +1,4 @@
-#include "Scene.h"
+#include "GameScene.h"
 #include "InputSystem.h"
 
 const int FPS = 60;
@@ -16,15 +16,13 @@ void Scene::GameMain() {
 	this->Start();
 	while (run)
 	{
-		
 		frameStart = SDL_GetTicks();
+
 		gameEvent = &_event;
 		this->Update();
 		deltaTime = SDL_GetTicks() - frameStart;
-		
-		if (frameDelay>deltaTime) {
-			SDL_Delay(frameDelay-deltaTime);
-		}
+
+		SDL_Delay(frameDelay > deltaTime ? (frameDelay - deltaTime) : 0);
 
 	}
 
@@ -35,8 +33,21 @@ int Scene::GetID()
 	return id;
 }
 
-void Scene::Start() {
+Scene::Scene()
+{
+
 }
 
-void Scene::Update() {
+Scene::Scene(int id,SceneManager * sceneManager)
+{
+	this->id = id;
+	this->sceneManager = sceneManager;
+	this->sceneManager->AddLevel(this);
+}
+
+Scene::~Scene()
+{
+	delete this;
+	SDL_FreeSurface(this->sprite->surface);
+	SDL_DestroyTexture(this->sprite->texture);
 }

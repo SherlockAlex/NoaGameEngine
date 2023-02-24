@@ -8,9 +8,9 @@
 #include <iostream>
 //×Ô¶¨Òå¿â
 #include "Graphic.h"
-#include "Scene.h"
 #include "Player.h"
-#include "SceneManager.h"
+
+#include "GameScene.h"
 
 using namespace std;
 

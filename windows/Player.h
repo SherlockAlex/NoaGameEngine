@@ -25,7 +25,7 @@ public:
 public:
 
 	void OnStart() override {
-		SetScreenTransform(20,200);
+		
 		cout << "玩家初始化成功" << endl;
 	}
 

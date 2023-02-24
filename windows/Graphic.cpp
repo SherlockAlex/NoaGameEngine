@@ -30,6 +30,9 @@ void DrawTexture(const char * filename,int width,int height,SDL_Rect * rect, SDL
 
 	SDL_RenderPresent(renderer);//显示渲染
 
+	SDL_FreeSurface(surface);
+	SDL_DestroyTexture(texture);
+
 	//显示完图片后内存释放
 	//cout << "渲染图片: " << filename << "-成功" << endl;
 
@@ -56,9 +59,7 @@ void DrawScene(Sprite* sprites[], int count)
 
 	for (int i = 0; i < count;i++)
 	{
-		
 		SDL_RenderCopy(gameRenderer, sprites[i]->texture, sprites[i]->o_rect, sprites[i]->d_rect);
-		
 		//SDL_RenderCopyEx(gameRenderer, sprites[i]->texture, sprites[i]->o_rect, sprites[i]->d_rect,NULL,NULL,SDL_FLIP_NONE);
 	}
 	SDL_RenderPresent(gameRenderer);
