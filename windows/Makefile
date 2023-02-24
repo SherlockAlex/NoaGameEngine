@@ -1,4 +1,4 @@
-objs=Application.h Application.cpp Assets.cpp Assets.h GameObject.cpp GameObject.h GameSetting.cpp GameSetting.h Graphic.h Graphic.cpp InitGame.cpp InitGame.h InputSystem.h InputSystem.cpp main.cpp NoaMath.h NoaMath.cpp Physics.cpp Physics.h Player.h Player.cpp Scene.h Scene.cpp SceneList.h SceneList.cpp SceneManager.h SceneManager.cpp Sprite.h Sprite.cpp TestMenu.h TestMenu.cpp TestScene.h TestScene.cpp
+objs=Application.h Application.cpp Assets.cpp Assets.h GameObject.cpp GameObject.h GameSetting.cpp GameSetting.h Graphic.h Graphic.cpp InitGame.cpp InitGame.h InputSystem.h InputSystem.cpp main.cpp NoaMath.h NoaMath.cpp Physics.cpp Physics.h Player.h Player.cpp GameScene.h Scene.cpp SceneList.cpp SceneManager.cpp Sprite.h Sprite.cpp TestMenu.h TestMenu.cpp TestScene.h TestScene.cpp
 
 CXX=g++
 
