@@ -8,6 +8,9 @@
 /*场景图片*/
 #define MAP_IMG "Map.png"
 
+/*实现资源的导入*/
+
+
 #endif // !NOAGAMEENGINE_ASSETS_H
 
 

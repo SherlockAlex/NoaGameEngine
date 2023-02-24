@@ -4,7 +4,7 @@
 #include "InitGame.h"
 
 
-int main() 
+int main(int argc,char * argv[]) 
 {
 	//system("color 9C");
 	InitGame();

@@ -31,7 +31,7 @@ public:
 	void Start() override
 	{
 
-		cout << "当前场景:TestMenu" << endl;
+		cout << "runing scene:TestMenu" << endl;
 		//surface = sceneManager->GetSurface();
 		this->renderer = gameRenderer;
 		player->OnStart();
@@ -43,9 +43,10 @@ public:
 		float frameStart = SDL_GetTicks();
 		//cout << "正在运行：TestMenu" << endl;
 		DrawScene(sprites,2);
-		player->Move();
-		//player->OnUpdate();
-		player->PlayerControl();
+		//
+		player->OnUpdate();
+		//
+		//这里去播放角色的动画
 		if ((SDL_GetTicks()-frameStart)<16) {
 			SDL_Delay(16-(SDL_GetTicks() - frameStart));
 		}

@@ -6,7 +6,7 @@ Sprite::Sprite(const char* filename, int w, int h)
 	//加载图片转化成Sprite格式
 	surface = IMG_Load(filename);//读取图片
 	if (!surface) {
-		cout << "读取图片:" << filename << "-失败" << endl;
+		cout << "read image:" << filename << "-failed" << endl;
 		//return;
 	}
 
@@ -38,7 +38,7 @@ Sprite::Sprite(const char* filename, int w, int h)
 
 	texture = SDL_CreateTextureFromSurface(gameRenderer, surface);
 	if (!texture) {
-		cout << "创建图片:" << filename << "-失败" << endl;
+		cout << "create texture:" << filename << "-failed" << endl;
 		//return;
 	}
 }
@@ -48,7 +48,7 @@ Sprite::Sprite(const char* filename, SDL_Rect* o_rect, SDL_Rect* d_rect)
 	//加载图片转化成Sprite格式
 	surface = IMG_Load(filename);//读取图片
 	if (!surface) {
-		cout << "读取图片:" << filename << "-失败" << endl;
+		cout << "load image:" << filename << "-failed" << endl;
 		//return;
 	}
 
@@ -58,7 +58,7 @@ Sprite::Sprite(const char* filename, SDL_Rect* o_rect, SDL_Rect* d_rect)
 
 	texture = SDL_CreateTextureFromSurface(gameRenderer, surface);
 	if (!texture) {
-		cout << "创建图片:" << filename << "-失败" << endl;
+		cout << "create texture:" << filename << "-failed" << endl;
 		//return;
 	}
 }

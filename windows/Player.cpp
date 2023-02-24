@@ -3,7 +3,7 @@
 #include "InputSystem.h"
 #include "NoaMath.h"
 
-void Player::PlayerControl()
+bool Player::PlayerControl()
 {
 	/*人物的行为事件*/
 	//SetScreenTransform(GetScreenTransform()->x, GetScreenTransform()->y + 9.8*0.02*(currentTime/1000));
@@ -15,6 +15,7 @@ void Player::PlayerControl()
 		case SDL_QUIT:
 			SDL_Quit();
 			run = false;
+			return false;
 			break;
 		case SDL_KEYDOWN:
 			switch (gameEvent->key.keysym.sym)
@@ -39,19 +40,23 @@ void Player::PlayerControl()
 			default:
 				break;
 			}
+			return true;
 			break;
 		default:
+			return false;
 			break;
 		}
 	}
 	
-	return;
+	return false;
 }
 
 void Player::Move()
 {
-	PlayerControl();
-
+	//PlayerControl();
+	if(PlayerControl()){
+		//如果角色在移动
+	}
 	rect.x = (int)round(transform->x);
 	rect.y = (int)round(transform->y);
 	return;
@@ -79,7 +84,7 @@ Player::Player()
 
 	sprite = new Sprite(fileName,&orect,&rect);
 
-	cout << "角色创建成功" << endl;
+	cout << "Init player successfuly" << endl;
 }
 
 Player::~Player()
