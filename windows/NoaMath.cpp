@@ -2,6 +2,7 @@
 
 #include "NoaMath.h"
 #include "GameSetting.h"
+#include "InputSystem.h"
 
 inline Vector2::Vector2()
 {
@@ -35,11 +36,8 @@ Vector2 Vector2::GetDirection()
 }
 
 float Lerp(float a, float b) {
-	if (SDL_GetTicks() - frameStart <(1000 / 60))
-	{
-		SDL_Delay(16-(SDL_GetTicks() - frameStart));
-	}
-	float y = (b - a) * (float)(SDL_GetTicks() - frameStart) / 32 + a;
-	std::cout << y << std::endl;
+	//float i = 0;
+	float y = (b - a) / 10 + a;
+	
 	return y;
 }

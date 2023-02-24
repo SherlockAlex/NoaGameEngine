@@ -10,7 +10,7 @@ using namespace std;
 
 class Player :public GameObject
 {
-private:
+public:
 
 	/*处理玩家键盘控制*/
 	void PlayerControl();
@@ -30,7 +30,7 @@ public:
 	}
 
 	void OnUpdate() override {
-		Move();
+		
 		return;
 	}
 

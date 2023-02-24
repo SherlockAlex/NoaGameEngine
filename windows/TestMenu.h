@@ -40,10 +40,15 @@ public:
 
 	void Update() override
 	{
+		float frameStart = SDL_GetTicks();
 		//cout << "正在运行：TestMenu" << endl;
 		DrawScene(sprites,2);
-		player->OnUpdate();
-		
+		player->Move();
+		//player->OnUpdate();
+		player->PlayerControl();
+		if ((SDL_GetTicks()-frameStart)<16) {
+			SDL_Delay(16-(SDL_GetTicks() - frameStart));
+		}
 	}
 
 };

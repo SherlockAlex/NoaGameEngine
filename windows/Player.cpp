@@ -20,21 +20,21 @@ void Player::PlayerControl()
 			switch (gameEvent->key.keysym.sym)
 			{
 			case SDLK_RIGHT:
-				transform->x = Lerp(transform->x, (transform->x + 20));
+				transform->x = Lerp(transform->x, (transform->x + 80));
 				break;
 			case SDLK_LEFT:
 				//transform->x = transform->x - 9;
-				transform->x = Lerp(transform->x, (transform->x - 20));
+				transform->x = Lerp(transform->x, (transform->x - 80));
 				break;
 			case SDLK_ESCAPE:
 				run = false;
 				SDL_Quit();
 				break;
 			case SDLK_d:
-				transform->x = Lerp(transform->x, (transform->x + 10));
+				transform->x = Lerp(transform->x, (transform->x + 80));
 				break;
 			case SDLK_a:
-				transform->x = Lerp(transform->x, (transform->x - 10));
+				transform->x = Lerp(transform->x, (transform->x - 80));
 				break;
 			default:
 				break;
