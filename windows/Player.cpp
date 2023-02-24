@@ -1,6 +1,7 @@
 #include "Player.h"
 #include "Application.h"
 #include "InputSystem.h"
+#include "NoaMath.h"
 
 void Player::PlayerControl()
 {
@@ -19,20 +20,21 @@ void Player::PlayerControl()
 			switch (gameEvent->key.keysym.sym)
 			{
 			case SDLK_RIGHT:
-				transform->x = transform->x + 9;
+				transform->x = Lerp(transform->x, (transform->x + 20));
 				break;
 			case SDLK_LEFT:
-				transform->x = transform->x - 9;
+				//transform->x = transform->x - 9;
+				transform->x = Lerp(transform->x, (transform->x - 20));
 				break;
 			case SDLK_ESCAPE:
 				run = false;
 				SDL_Quit();
 				break;
 			case SDLK_d:
-				transform->x = transform->x + 9;
+				transform->x = Lerp(transform->x, (transform->x + 10));
 				break;
 			case SDLK_a:
-				transform->x = transform->x - 9;
+				transform->x = Lerp(transform->x, (transform->x - 10));
 				break;
 			default:
 				break;
@@ -50,8 +52,8 @@ void Player::Move()
 {
 	PlayerControl();
 
-	rect.x = int(transform->x);
-	rect.y = int(transform->y);
+	rect.x = (int)round(transform->x);
+	rect.y = (int)round(transform->y);
 	return;
 }
 

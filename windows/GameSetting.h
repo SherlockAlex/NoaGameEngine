@@ -10,6 +10,8 @@ typedef SDL_Event * NoaEvent;
 //游戏是否在运行
 extern bool run;
 
+//游戏进入主程序的时间
+extern int startTime;
 extern const char* gameName;
 extern unsigned int frameStart;
 extern float deltaTime;

@@ -21,6 +21,6 @@ public:
 
 }Vector2;
 
-
+extern float Lerp(float a,float b);
 
 #endif

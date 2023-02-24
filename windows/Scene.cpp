@@ -5,6 +5,7 @@ const int FPS = 60;
 unsigned int frameStart = 0;
 float deltaTime = 0;
 NoaEvent gameEvent=NULL;
+int startTime;
 
 void Scene::GameMain() {
 	const int frameDelay = 1000 / FPS;
@@ -13,6 +14,7 @@ void Scene::GameMain() {
 	cout << "frameDelay: " << frameDelay << endl;
 	//在这里面执行所有物件的操作
 	SDL_Event _event;
+	startTime= SDL_GetTicks();
 	this->Start();
 	while (run)
 	{
