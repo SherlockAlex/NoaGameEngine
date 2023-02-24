@@ -50,7 +50,8 @@ protected:
 
 	Sprite* sprite = nullptr;
 
-	Sprite* sprites[2];
+	/*一个场景可以渲染1000张图像*/
+	Sprite* sprites[MAXSIZE];
 
 	SDL_Rect orect;
 	SDL_Rect drect;
