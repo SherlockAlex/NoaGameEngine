@@ -10,13 +10,20 @@ LIBDIRS+=/usr/lib
 
 CFLAGS=-lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -lSDL2_net -lstdc++
 
-GAME_NAME=game
+BUILD_DIR=./game-build
+
+GAME_FILE=/game
 
 install:$(objs)
-	g++ $(objs) -I$(INCDIRS) -L$(LIBDIRS) $(CFLAGS) -o game-build/$(GAME_NAME)
+	g++ $(objs) -I$(INCDIRS) -L$(LIBDIRS) $(CFLAGS) -o $(BUILD_DIR)$(GAME_FILE)
+	cp Mario.png $(BUILD_DIR)
+	cp Map.png $(BUILD_DIR)
 
 env-linux:
 	sudo apt-get install libsdl2-dev libsdl2-net-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
 
 clean:
-	game
+	rm -rf $(BUILD_DIR)$(GAME_FILE)
+
+run:
+	$(BUILD_DIR)$(GAME_FILE)
