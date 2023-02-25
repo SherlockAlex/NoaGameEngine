@@ -8,7 +8,7 @@ bool Player::PlayerControl()
 	/*人物的行为事件*/
 	//SetScreenTransform(GetScreenTransform()->x, GetScreenTransform()->y + 9.8*0.02*(currentTime/1000));
 	
-	while (SDL_PollEvent(gameEvent)) {
+	if (SDL_PollEvent(gameEvent)) {
 		switch (gameEvent->type)
 		{
 		case SDLK_ESCAPE:
@@ -50,16 +50,20 @@ bool Player::PlayerControl()
 	return false;
 }
 
+int p_start;
+
 void Player::Move()
 {
-	//PlayerControl();
+	p_start = SDL_GetTicks();
+	
 	if(PlayerControl()){
-		//如果角色在移动
-		cout<<"player is moving"<<endl;
+
+	}
+	if (SDL_GetTicks()-p_start>3) {
+		return;
 	}
 	rect.x = (int)round(transform->x);
 	rect.y = (int)round(transform->y);
-	return;
 }
 
 Player::Player()

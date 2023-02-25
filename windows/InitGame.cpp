@@ -44,8 +44,9 @@ int Game()
 
 	cout << "start to free game resource" << endl;
 	//释放内存资源
-	SDL_DestroyWindow(gameWindow);
+	
 	SDL_DestroyRenderer(gameRenderer);
+	SDL_DestroyWindow(gameWindow);
 	SDL_Quit();
 
 	cout << "free game resource complect" << endl;

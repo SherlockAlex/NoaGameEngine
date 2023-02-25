@@ -29,10 +29,15 @@ public:
 		//cout << "玩家初始化成功" << endl;
 	}
 
+	int start;
 	void OnUpdate() override {
+		start = SDL_GetTicks();
 		PlayerControl();
 		//更新角色动画
 		Move();
+		if (SDL_GetTicks()-start>1) {
+			return;
+		}
 		return;
 	}
 

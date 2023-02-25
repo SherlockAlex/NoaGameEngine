@@ -37,19 +37,11 @@ public:
 		player->OnStart();
 
 	}
+	
 
 	void Update() override
 	{
-		float frameStart = SDL_GetTicks();
-		//cout << "正在运行：TestMenu" << endl;
-		
-		//
 		player->OnUpdate();
-		//
-		//这里去播放角色的动画
-		if ((SDL_GetTicks()-frameStart)<16) {
-			SDL_Delay(16-(SDL_GetTicks() - frameStart));
-		}
 	}
 
 };
