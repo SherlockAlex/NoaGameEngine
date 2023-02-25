@@ -6,14 +6,14 @@ INCDIRS+=/usr/include/SDL2#导入头文件
 
 LIBDIRS+=/usr/lib#导入库文件
 
-CFLAGS=-lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -lSDL2_net -lstdc++
+CFLAGS=-lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -lSDL2_net -static-libstdc++ -lpthread
 
 BUILD_DIR=./game-build
 
 GAME_FILE=/game
 
 install:$(objs)
-	$(CXX) $(objs) -I$(INCDIRS) -L$(LIBDIRS) $(CFLAGS) -o $(BUILD_DIR)$(GAME_FILE)
+	$(CXX) $(objs) -Bstatic -I$(INCDIRS) -L$(LIBDIRS) $(CFLAGS) -o $(BUILD_DIR)$(GAME_FILE)
 	cp Mario.png $(BUILD_DIR)
 	cp Map.png $(BUILD_DIR)
 
