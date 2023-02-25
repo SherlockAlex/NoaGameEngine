@@ -51,15 +51,16 @@ void DrawSprite(Sprite* sprite)
 
 int start;
 
+//当跳出来的时候绘制前一帧的画面
 void DrawScene(Sprite* sprites[])
 {
+	
 	start = SDL_GetTicks();
 	for (int i = 0; sprites[i]!=nullptr ;i++)
 	{
 		//SDL_RenderCopy(gameRenderer, sprites[0]->texture, sprites[0]->o_rect, sprites[0]->d_rect);
 		SDL_RenderCopy(gameRenderer, sprites[i]->texture, sprites[i]->o_rect, sprites[i]->d_rect);
-		if (SDL_GetTicks()-start>1) {
-			cout << "Draw return" << endl;
+		if (SDL_GetTicks()-start>0) {
 			return;
 		}
 	}

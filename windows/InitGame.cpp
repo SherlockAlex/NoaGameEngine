@@ -28,7 +28,7 @@ int Game()
 		return -1;
 	}
 	//gameWindow = SDL_CreateWindow(gameName, 200, 200, width, height, SDL_WINDOW_FULLSCREEN);//全屏显示;
-	gameRenderer= SDL_CreateRenderer(gameWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);//渲染器采用硬件加速;
+	gameRenderer= SDL_CreateRenderer(gameWindow, -1, SDL_RENDERER_PRESENTVSYNC);//渲染器采用硬件加速;
 
 	if (!gameRenderer) {
 		cout << "Create renderer failed" << endl;
