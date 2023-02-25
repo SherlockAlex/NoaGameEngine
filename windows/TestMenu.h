@@ -42,7 +42,7 @@ public:
 	{
 		float frameStart = SDL_GetTicks();
 		//cout << "正在运行：TestMenu" << endl;
-		DrawScene(sprites,2);
+		
 		//
 		player->OnUpdate();
 		//

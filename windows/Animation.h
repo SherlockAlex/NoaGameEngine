@@ -2,7 +2,6 @@
 #define NOAGAMEENGINE_ANIMATION_H
 
 #include "Sprite.h"
-#include "Graphic.h"
 
 /*
 实现和动画相关的

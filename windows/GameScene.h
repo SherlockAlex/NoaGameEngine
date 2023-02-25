@@ -53,6 +53,9 @@ protected:
 	/*一个场景可以渲染1000张图像*/
 	Sprite* sprites[MAXSIZE];
 
+	/*场景中sprites的数量*/
+	int spritesCount;
+
 	SDL_Rect orect;
 	SDL_Rect drect;
 
@@ -74,7 +77,7 @@ public:
 	virtual void Update()=0;	//在子类中实现
 
 	Scene();
-	Scene(int id, SceneManager* _sceneManager);
+	Scene(int id, SceneManager* _sceneManager,int spritesCount);
 	~Scene();
 
 };

@@ -56,6 +56,7 @@ void Player::Move()
 	//PlayerControl();
 	if(PlayerControl()){
 		//如果角色在移动
+		cout<<"player is moving"<<endl;
 	}
 	rect.x = (int)round(transform->x);
 	rect.y = (int)round(transform->y);

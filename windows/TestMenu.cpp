@@ -1,6 +1,6 @@
 #include "TestMenu.h"
 
-TestMenu::TestMenu(SceneManager * _sceneManager):Scene(0,_sceneManager) {
+TestMenu::TestMenu(SceneManager * _sceneManager):Scene(0,_sceneManager,2) {
 	
 
 	orect.x = 0;

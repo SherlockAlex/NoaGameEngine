@@ -44,8 +44,6 @@ public:
 		cout << "HP:" << "100" << endl;
 		cout << endl << "Position:" << player->GetTransform()->x << "," << player->GetTransform()->y;
 		player->OnUpdate();
-		
-		
 	}
 
 };

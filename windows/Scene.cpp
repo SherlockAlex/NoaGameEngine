@@ -1,6 +1,7 @@
 #include "GameScene.h"
 #include "InputSystem.h"
 
+
 const int FPS = 60;
 unsigned int frameStart = 0;
 float deltaTime = 0;
@@ -21,6 +22,8 @@ void Scene::GameMain() {
 		frameStart = SDL_GetTicks();
 
 		gameEvent = &_event;
+		/*»æÖÆ³¡¾°Í¼ÐÎ*/
+		DrawScene(this->sprites,spritesCount);
 		this->Update();
 		deltaTime = SDL_GetTicks() - frameStart;
 
@@ -40,9 +43,10 @@ Scene::Scene()
 
 }
 
-Scene::Scene(int id,SceneManager * sceneManager)
+Scene::Scene(int id,SceneManager * sceneManager,int spritesCount)
 {
 	this->id = id;
+	this->spritesCount=spritesCount;
 	this->sceneManager = sceneManager;
 	this->sceneManager->AddLevel(this);
 }

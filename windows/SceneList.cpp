@@ -73,6 +73,10 @@ void sceneList::remove(Scene* item)
 bool sceneList::contain(Scene* item)
 {
 	//判断元素是否在列表中
+	if(items[item->GetID()]!=nullptr){
+		return true;
+	}
+
 	for (int i = 0; i <= count;i++) {
 		if (item==items[i]) {
 			return true;

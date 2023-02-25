@@ -34,10 +34,10 @@ void SceneManager::AddLevel(Scene* level)
 
 void SceneManager::LoadLevel(int index) {
 
-	cout << "正在加载场景: " << index << endl;
+	cout << "Loading scene: " << index << endl;
 	canRun = false;
 	currentScene = list.at(index);
 	canRun = true;
-	cout << "场景: " << index << "加载完成" << endl;
+	cout << "Scene: " << index << "is loaded" << endl;
 	Run();//从新执行Run
 }
