@@ -13,8 +13,7 @@ bool Player::PlayerControl()
 		{
 		case SDLK_ESCAPE:
 		case SDL_QUIT:
-			SDL_Quit();
-			run = false;
+			Quit();
 			return false;
 			break;
 		case SDL_KEYDOWN:
