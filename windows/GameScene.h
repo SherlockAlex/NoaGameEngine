@@ -77,7 +77,7 @@ public:
 	virtual void Update()=0;	//在子类中实现
 
 	Scene();
-	Scene(int id, SceneManager* _sceneManager,int spritesCount);
+	Scene(int id, SceneManager* _sceneManager);
 	~Scene();
 
 };

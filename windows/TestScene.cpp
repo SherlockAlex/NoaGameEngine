@@ -1,6 +1,6 @@
 #include "TestScene.h"
 
-TestScene::TestScene(SceneManager* sceneManager):Scene(1, sceneManager,0) {
+TestScene::TestScene(SceneManager* sceneManager):Scene(1, sceneManager) {
 
 	//this->sceneManager->AddLevel(this);
 	//sceneManager = manager;

@@ -40,7 +40,7 @@ extern void DrawSprite(Sprite * sprite);
 一个场景有许多的图片组成，将每一帧的图片先相加，然后在一起绘制
 一个图像的数组，一个是数组的长度
 */
-extern void DrawScene(Sprite * sprites[],int count);
+extern void DrawScene(Sprite * sprites[]);
 
 #endif // !NOAGAMEENGINE_GRAPHIC_H
 

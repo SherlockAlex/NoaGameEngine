@@ -23,7 +23,7 @@ void Scene::GameMain() {
 
 		gameEvent = &_event;
 		/*»æÖÆ³¡¾°Í¼ÐÎ*/
-		DrawScene(this->sprites,spritesCount);
+		DrawScene(this->sprites);
 		this->Update();
 		deltaTime = SDL_GetTicks() - frameStart;
 
@@ -43,10 +43,9 @@ Scene::Scene()
 
 }
 
-Scene::Scene(int id,SceneManager * sceneManager,int spritesCount)
+Scene::Scene(int id,SceneManager * sceneManager)
 {
 	this->id = id;
-	this->spritesCount=spritesCount;
 	this->sceneManager = sceneManager;
 	this->sceneManager->AddLevel(this);
 }

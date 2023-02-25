@@ -49,7 +49,7 @@ void DrawSprite(Sprite* sprite)
 
 }
 
-void DrawScene(Sprite* sprites[], int count)
+void DrawScene(Sprite* sprites[])
 {
 	SDL_RenderClear(gameRenderer);
 	for (int i = 0; sprites[i]!=nullptr ;i++)

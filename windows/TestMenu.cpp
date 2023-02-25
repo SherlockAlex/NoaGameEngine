@@ -1,6 +1,6 @@
 #include "TestMenu.h"
 
-TestMenu::TestMenu(SceneManager * _sceneManager):Scene(0,_sceneManager,2) {
+TestMenu::TestMenu(SceneManager * _sceneManager):Scene(0,_sceneManager) {
 	
 
 	orect.x = 0;
@@ -25,7 +25,7 @@ TestMenu::TestMenu(SceneManager * _sceneManager):Scene(0,_sceneManager,2) {
 	sprites[0] = sprite;
 	sprites[1] = player->GetSprite();
 
-	DrawScene(sprites, 2);
+	//DrawScene(sprites, 2);
 
 	//DrawSprite(sprite);
 
