@@ -33,6 +33,7 @@ TestMenu::TestMenu(SceneManager * _sceneManager):Scene(0,_sceneManager) {
 
 TestMenu::~TestMenu(){
 	delete this;
+	cout << "closing game scenes" << endl;
 	SDL_FreeSurface(this->sprite->surface);
 	SDL_DestroyTexture(this->sprite->texture);
 }

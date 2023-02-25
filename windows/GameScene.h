@@ -4,8 +4,6 @@
 //系统库(两个模块的头文件不能相互引用)
 #include <iostream>
 
-#include "Application.h"
-#include "GameSetting.h"
 #include "Graphic.h"
 #include "Assets.h"
 

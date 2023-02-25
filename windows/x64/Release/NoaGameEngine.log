@@ -1,38 +1,58 @@
-﻿  Animation.cpp
-  Application.cpp
-  Graphic.cpp
+﻿  Application.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
-  InitGame.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  GameObject.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(40,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameObject.cpp(32,31): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameObject.cpp(33,33): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameObject.cpp(34,34): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameObject.cpp(35,33): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+  GameSetting.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestMenu.h(43,20): warning C4244: “初始化”: 从“Uint32”转换到“float”，可能丢失数据
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestMenu.h(51,16): warning C4244: “参数”: 从“float”转换到“Uint32”，可能丢失数据
+  InitGame.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestMenu.h(43,20): warning C4244: “初始化”: 从“Uint32”转换到“float”，可能丢失数据
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestMenu.h(51,16): warning C4244: “参数”: 从“float”转换到“Uint32”，可能丢失数据
+  InputSystem.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  NoaMath.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
   Player.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.cpp(75,20): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.cpp(76,20): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
   Scene.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(40,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Scene.cpp(28,30): warning C4244: “=”: 从“Uint32”转换到“float”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Scene.cpp(30,24): warning C4244: “参数”: 从“float”转换到“Uint32”，可能丢失数据
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Scene.cpp(27,30): warning C4244: “=”: 从“Uint32”转换到“float”，可能丢失数据
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Scene.cpp(31,24): warning C4244: “参数”: 从“float”转换到“Uint32”，可能丢失数据
   SceneList.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(40,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
   SceneManager.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(40,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
   TestMenu.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(40,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestMenu.h(43,20): warning C4244: “初始化”: 从“Uint32”转换到“float”，可能丢失数据
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\TestMenu.h(51,16): warning C4244: “参数”: 从“float”转换到“Uint32”，可能丢失数据
   TestScene.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(40,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  main.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
   正在生成代码
-  0 of 52 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 53 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
   NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Release\NoaGameEngine.exe

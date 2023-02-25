@@ -15,18 +15,19 @@ void Scene::GameMain() {
 	cout << "frameDelay: " << frameDelay << endl;
 	//在这里面执行所有物件的操作
 	SDL_Event _event;
+	gameEvent = &_event;
 	startTime= SDL_GetTicks();
 	this->Start();
 	while (run)
 	{
 		frameStart = SDL_GetTicks();
-
-		gameEvent = &_event;
 		/*绘制场景图形*/
 		DrawScene(this->sprites);
 		this->Update();
 		deltaTime = SDL_GetTicks() - frameStart;
-
+		if (!run) {
+			break;
+		}
 		SDL_Delay(frameDelay > deltaTime ? (frameDelay - deltaTime) : 0);
 
 	}

@@ -4,4 +4,3 @@
 
 
 #endif // !NOAGAMEENGINE_ANIMATION_H
-

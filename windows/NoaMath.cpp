@@ -2,7 +2,6 @@
 
 #include "NoaMath.h"
 #include "GameSetting.h"
-#include "InputSystem.h"
 
 inline Vector2::Vector2()
 {

@@ -6,7 +6,5 @@
 
 int main(int argc,char * argv[]) 
 {
-	//system("color 9C");
-	InitGame();
-	return 0;//把程序控制权交出去
+	return Game();
 }

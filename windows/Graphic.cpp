@@ -51,9 +51,9 @@ void DrawSprite(Sprite* sprite)
 
 void DrawScene(Sprite* sprites[])
 {
-	SDL_RenderClear(gameRenderer);
-	for (int i = 0; sprites[i]!=nullptr ;i++)
+	for (int i = 1; sprites[i]!=nullptr ;i++)
 	{
+		SDL_RenderCopy(gameRenderer, sprites[0]->texture, sprites[0]->o_rect, sprites[0]->d_rect);
 		SDL_RenderCopy(gameRenderer, sprites[i]->texture, sprites[i]->o_rect, sprites[i]->d_rect);
 	}
 	SDL_RenderPresent(gameRenderer);
