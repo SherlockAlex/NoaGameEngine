@@ -1,4 +1,6 @@
 #ifndef NOAGAMEENGINE_APPLICATION_H
 #define NOAGAMEENGIEN_APPLICATION_H
 
+extern void Quit();
+
 #endif
