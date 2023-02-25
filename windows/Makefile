@@ -2,11 +2,9 @@ objs=Application.h Application.cpp Assets.cpp Assets.h GameObject.cpp GameObject
 
 CXX=g++
 
-INCDIRS+=/usr/include/SDL2
+INCDIRS+=/usr/include/SDL2#导入头文件
 
-LIBDIRS+=/usr/lib
-
-#CFLAGS=-I/usr/include/SDL2 -L/usr/lib -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -lSDL2_net -lstdc++
+LIBDIRS+=/usr/lib#导入库文件
 
 CFLAGS=-lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -lSDL2_net -lstdc++
 
@@ -15,7 +13,7 @@ BUILD_DIR=./game-build
 GAME_FILE=/game
 
 install:$(objs)
-	g++ $(objs) -I$(INCDIRS) -L$(LIBDIRS) $(CFLAGS) -o $(BUILD_DIR)$(GAME_FILE)
+	$(CXX) $(objs) -I$(INCDIRS) -L$(LIBDIRS) $(CFLAGS) -o $(BUILD_DIR)$(GAME_FILE)
 	cp Mario.png $(BUILD_DIR)
 	cp Map.png $(BUILD_DIR)
 
