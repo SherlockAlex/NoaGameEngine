@@ -25,8 +25,8 @@ void Scene::GameMain() {
 		DrawScene(this->sprites);
 		this->Update();
 		deltaTime = SDL_GetTicks() - frameStart;
-		if (frameDelay>deltaTime) {
-			SDL_Delay(frameDelay - deltaTime);
+		if (16>deltaTime) {
+			SDL_Delay(16 - SDL_GetTicks() + frameStart);
 		}
 
 	}

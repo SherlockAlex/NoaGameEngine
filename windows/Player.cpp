@@ -65,19 +65,19 @@ void Player::Move()
 	if(PlayerControl()){
 
 	}
-	if (SDL_GetTicks()-p_start>2) {
+	/*if (SDL_GetTicks()-p_start>2) {
 		return;
-	}
+	}*/
 
 	rect.x = transform->x;
 	
 	ApplyGrivaty(&transform->y, (transform->y < 400));
 	rect.y = transform->y;
 
-	if ((SDL_GetTicks() - p_start)<2) {
+	/*if ((SDL_GetTicks() - p_start)<2) {
 		SDL_Delay(2-SDL_GetTicks()+p_start);
 		return;
-	}
+	}*/
 
 	
 }

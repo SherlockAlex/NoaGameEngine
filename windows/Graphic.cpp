@@ -59,10 +59,6 @@ void DrawScene(Sprite* sprites[])
 	{
 		//SDL_RenderCopy(gameRenderer, sprites[0]->texture, sprites[0]->o_rect, sprites[0]->d_rect);
 		SDL_RenderCopyF(gameRenderer, sprites[i]->texture, sprites[i]->o_rect, sprites[i]->d_rect);
-		if (SDL_GetTicks()-start>0) {
-			//SDL_RenderPresent(gameRenderer);
-			return;
-		}
 	}
 	SDL_RenderPresent(gameRenderer);
 }
