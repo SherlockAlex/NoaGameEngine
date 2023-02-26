@@ -21,21 +21,21 @@ bool Player::PlayerControl()
 			switch (gameEvent->key.keysym.sym)
 			{
 			case SDLK_RIGHT:
-				transform->x = Lerp(transform->x, (transform->x + 80));
+				transform->x = Lerp(transform->x, (transform->x + 100));
 				break;
 			case SDLK_LEFT:
 				//transform->x = transform->x - 9;
-				transform->x = Lerp(transform->x, (transform->x - 80));
+				transform->x = Lerp(transform->x, (transform->x - 100));
 				break;
 			case SDLK_ESCAPE:
 				run = false;
 				SDL_Quit();
 				break;
 			case SDLK_d:
-				transform->x = Lerp(transform->x, (transform->x + 80));
+				transform->x = Lerp(transform->x, (transform->x + 100));
 				break;
 			case SDLK_a:
-				transform->x = Lerp(transform->x, (transform->x - 80));
+				transform->x = Lerp(transform->x, (transform->x - 100));
 				break;
 				case SDLK_UP:
 				cout << "Jump" << endl;
@@ -65,22 +65,20 @@ void Player::Move()
 	if(PlayerControl()){
 
 	}
-	if (SDL_GetTicks()-p_start>3) {
+	if (SDL_GetTicks()-p_start>2) {
 		return;
 	}
 
-	rect.x = (int)round(transform->x);
+	rect.x = (int)(transform->x);
 	
-	//下面的代码应该交给物理引擎
-
 	ApplyGrivaty(&transform->y, (transform->y < 400));
+	rect.y = (int)(transform->y);
 
-	/*if (transform->y<400) {
-		
-		transform->y += 0.00001*((SDL_GetTicks())* (SDL_GetTicks()));
-	}*/
-	//f_start = SDL_GetTicks();
-	rect.y = (int)round(transform->y);
+	if ((SDL_GetTicks() - p_start)<2) {
+		SDL_Delay(2-SDL_GetTicks()+p_start);
+		return;
+	}
+
 	
 }
 

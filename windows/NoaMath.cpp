@@ -35,6 +35,6 @@ Vector2 Vector2::GetDirection()
 }
 
 float Lerp(float a, float b) {
-	float y = (b - a)*0.1 + a;
+	float y = (b - a)*0.08 + a;
 	return y;
 }
