@@ -17,7 +17,7 @@ inline Vector2::Vector2(float x = 0, float y = 0) {
 float Vector2::GetLength()
 {
 	//获取向量长度
-	return n_sqrt(this->x * this->x +
+	return n_Sqrt(this->x * this->x +
 		this->y * this->y);
 }
 
@@ -40,16 +40,16 @@ float n_InvSqrt(float x)
 	int i = *(int*)&y;
 	i = 0x5f375a86 - (i >> 1);
 	y = *(float*)&i;
-	y = 1.5 * y - 0.5 * y * y * y * x;
-	y = 1.5 * y - 0.5 * y * y * y * x;
+	y = y * (1.5 - 0.5 * y * y * x);
+	y = y * (1.5 - 0.5 * y * y * x);
 	return y;
 }
 
-float n_sqrt(float x)
+float n_Sqrt(float x)
 {
 	float y = x;
 	int i = *(int*)&y;
-	i = 0x1fc00000 + (i >> 1);
+	i = 0x1fbd1df5 + (i >> 1);
 	y = *(float*)&i;
 	y = 0.5 * (y + x / y);
 	y = 0.5 * (y + x / y);

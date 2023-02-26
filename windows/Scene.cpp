@@ -24,7 +24,7 @@ void Scene::GameMain() {
 	startTime= SDL_GetTicks();
 	this->Start();
 
-	//TestMath();
+	TestMath();
 
 	while (run)
 	{
@@ -67,10 +67,10 @@ Scene::~Scene()
 
 void TestMath() {
 	int time = clock();
-	cout << "system result:" << 1/(float)sqrt(131) << endl;
+	cout << "system result:" <<(float)sqrt(131) << endl;
 	cout << "System speed:" << (clock() - time) << endl;
 
 	time = clock();
-	cout << "noa result:" << n_InvSqrt(131) << endl;
+	cout << "noa result:" << n_Sqrt(131) << endl;
 	cout << "noa speed:" << (clock() - time) << endl;
 }
