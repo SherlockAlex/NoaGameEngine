@@ -14,14 +14,14 @@ public:
 	//文件原始的rect
 	SDL_Rect * o_rect=NULL;
 	//文件显示的rect
-	SDL_Rect * d_rect=NULL;
+	SDL_FRect * d_rect=NULL;
 
 public:
 	//Sprite();
 	//创建Sprite文件，并且要指定大小和位置
 	Sprite(const char * filename,int w,int h);
 
-	Sprite(const char* filename, SDL_Rect* o_rect, SDL_Rect * d_rect);
+	Sprite(const char* filename, SDL_Rect* o_rect, SDL_FRect * d_rect);
 
 };
 

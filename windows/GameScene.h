@@ -55,7 +55,7 @@ protected:
 	int spritesCount;
 
 	SDL_Rect orect;
-	SDL_Rect drect;
+	SDL_FRect drect;
 
 public:						//定义成员属性
 	SceneManager* sceneManager = nullptr;

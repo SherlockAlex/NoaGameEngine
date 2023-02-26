@@ -29,10 +29,10 @@ void GameObject::SetScreenTransform(float x, float y)
 void GameObject::UpdateColiderInfo()
 {
 	//检测周围碰撞点的信息
-	int up = rect.y - rect.h >> 1;
-	int down = rect.y + rect.h >> 1;
-	int right = rect.x + rect.w >> 1;
-	int left = rect.x - rect.w >> 1;
+	float up = rect.y - rect.h*0.5;
+	float down = rect.y + rect.h*0.5;
+	float right = rect.x + rect.w *0.5;
+	float left = rect.x - rect.w *0.5;
 }
 
 Sprite* GameObject::GetSprite()

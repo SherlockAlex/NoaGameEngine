@@ -25,7 +25,7 @@ Sprite::Sprite(const char* filename, int w, int h)
 
 	if (this->d_rect == NULL) {
 
-		SDL_Rect d;
+		SDL_FRect d;
 
 		d.x = 0;
 		d.y = 0;
@@ -43,7 +43,7 @@ Sprite::Sprite(const char* filename, int w, int h)
 	}
 }
 
-Sprite::Sprite(const char* filename, SDL_Rect* o_rect, SDL_Rect* d_rect)
+Sprite::Sprite(const char* filename, SDL_Rect* o_rect, SDL_FRect* d_rect)
 {
 	//加载图片转化成Sprite格式
 	surface = IMG_Load(filename);//读取图片

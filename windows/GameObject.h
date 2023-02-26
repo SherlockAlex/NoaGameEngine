@@ -23,7 +23,7 @@ protected:
 	const char* fileName;
 	int w;
 	int h;
-	SDL_Rect rect;
+	SDL_FRect rect;
 
 	SDL_Rect orect;
 

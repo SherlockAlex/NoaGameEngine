@@ -44,7 +44,7 @@ void DrawSprite(Sprite* sprite)
 	//这里要有优化，闪屏问题
 
 	SDL_RenderClear(gameRenderer);
-	SDL_RenderCopy(gameRenderer, sprite->texture, sprite->o_rect, sprite->d_rect);
+	SDL_RenderCopyF(gameRenderer, sprite->texture, sprite->o_rect, sprite->d_rect);
 	SDL_RenderPresent(gameRenderer);//显示渲染
 
 }
@@ -54,12 +54,11 @@ int start;
 //当跳出来的时候绘制前一帧的画面
 void DrawScene(Sprite* sprites[])
 {
-	
 	start = SDL_GetTicks();
 	for (int i = 0; sprites[i]!=nullptr ;i++)
 	{
 		//SDL_RenderCopy(gameRenderer, sprites[0]->texture, sprites[0]->o_rect, sprites[0]->d_rect);
-		SDL_RenderCopy(gameRenderer, sprites[i]->texture, sprites[i]->o_rect, sprites[i]->d_rect);
+		SDL_RenderCopyF(gameRenderer, sprites[i]->texture, sprites[i]->o_rect, sprites[i]->d_rect);
 		if (SDL_GetTicks()-start>0) {
 			//SDL_RenderPresent(gameRenderer);
 			return;

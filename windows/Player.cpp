@@ -69,10 +69,10 @@ void Player::Move()
 		return;
 	}
 
-	rect.x = (int)(transform->x);
+	rect.x = transform->x;
 	
 	ApplyGrivaty(&transform->y, (transform->y < 400));
-	rect.y = (int)(transform->y);
+	rect.y = transform->y;
 
 	if ((SDL_GetTicks() - p_start)<2) {
 		SDL_Delay(2-SDL_GetTicks()+p_start);
