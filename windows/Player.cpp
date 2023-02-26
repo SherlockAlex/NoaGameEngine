@@ -2,6 +2,7 @@
 #include "Application.h"
 #include "InputSystem.h"
 #include "NoaMath.h"
+#include "Physics.h"
 
 bool Player::PlayerControl()
 {
@@ -36,6 +37,9 @@ bool Player::PlayerControl()
 			case SDLK_a:
 				transform->x = Lerp(transform->x, (transform->x - 80));
 				break;
+				case SDLK_UP:
+				cout << "Jump" << endl;
+				break;
 			default:
 				break;
 			}
@@ -68,10 +72,13 @@ void Player::Move()
 	rect.x = (int)round(transform->x);
 	
 	//下面的代码应该交给物理引擎
-	if (transform->y<400) {
+
+	ApplyGrivaty(&transform->y, (transform->y < 400));
+
+	/*if (transform->y<400) {
 		
 		transform->y += 0.00001*((SDL_GetTicks())* (SDL_GetTicks()));
-	}
+	}*/
 	//f_start = SDL_GetTicks();
 	rect.y = (int)round(transform->y);
 	
