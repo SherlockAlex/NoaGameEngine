@@ -52,6 +52,8 @@ bool Player::PlayerControl()
 
 int p_start;
 
+int f_start = 0;		//从下下落开始，到下落结束所花的时间
+
 void Player::Move()
 {
 	p_start = SDL_GetTicks();
@@ -62,8 +64,17 @@ void Player::Move()
 	if (SDL_GetTicks()-p_start>3) {
 		return;
 	}
+
 	rect.x = (int)round(transform->x);
+	
+	//下面的代码应该交给物理引擎
+	if (transform->y<400) {
+		
+		transform->y += 0.00001*((SDL_GetTicks())* (SDL_GetTicks()));
+	}
+	//f_start = SDL_GetTicks();
 	rect.y = (int)round(transform->y);
+	
 }
 
 Player::Player()

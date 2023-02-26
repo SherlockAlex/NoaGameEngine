@@ -1,6 +1,9 @@
-﻿  InitGame.cpp
+﻿  Player.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.cpp(73,26): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.cpp(90,20): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.cpp(91,20): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
   正在生成代码
   2 of 53 functions ( 3.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation

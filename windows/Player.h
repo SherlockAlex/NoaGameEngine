@@ -18,6 +18,7 @@ public:
 	/*处理玩家移动事件*/
 	void Move();
 
+
 public:
 	Player();
 	~Player();
@@ -35,6 +36,7 @@ public:
 		PlayerControl();
 		//更新角色动画
 		Move();
+		
 		if (SDL_GetTicks()-start>1) {
 			return;
 		}
