@@ -28,9 +28,8 @@ public:						//定义成员方法
 	void InvokeButtonEvent();
 
 public:
-	void Start() override
-	{
-		
+	void Start() override {
+
 		cout << "runing scene:TestMenu" << endl;
 		//surface = sceneManager->GetSurface();
 		this->renderer = gameRenderer;

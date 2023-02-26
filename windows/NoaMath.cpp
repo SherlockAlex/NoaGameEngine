@@ -41,6 +41,7 @@ float n_InvSqrt(float x)
 	i = 0x5f375a86 - (i >> 1);
 	y = *(float*)&i;
 	y = 1.5 * y - 0.5 * y * y * y * x;
+	y = 1.5 * y - 0.5 * y * y * y * x;
 	return y;
 }
 
