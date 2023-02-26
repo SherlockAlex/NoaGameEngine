@@ -21,6 +21,16 @@ public:
 
 }Vector2;
 
+/* 快速倒数开根号，如果机器没有硬件算数指令的话
+* 速度比计算机系统自带的快，精度对于游戏来说足够用
+*/
+extern float n_InvSqrt(float x);
+
+/* 快速开根号，如果机器没有硬件算数指令的话
+* 速度比计算机系统自带的快，精度对于游戏来说足够用
+*/
+extern float n_sqrt(float x);
+
 extern float Lerp(float a,float b);
 
 #endif

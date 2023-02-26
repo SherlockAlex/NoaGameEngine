@@ -1,4 +1,6 @@
 #include "GameScene.h"
+#include "NoaMath.h"
+#include "time.h"
 #include "InputSystem.h"
 
 
@@ -7,6 +9,9 @@ unsigned int frameStart = 0;
 float deltaTime = 0;
 NoaEvent gameEvent=NULL;
 int startTime;
+
+/*测试数学函数效率*/
+void TestMath();
 
 void Scene::GameMain() {
 	const int frameDelay = 1000 / FPS;
@@ -18,6 +23,9 @@ void Scene::GameMain() {
 	gameEvent = &_event;
 	startTime= SDL_GetTicks();
 	this->Start();
+
+	TestMath();
+
 	while (run)
 	{
 		frameStart = SDL_GetTicks();
@@ -55,4 +63,14 @@ Scene::~Scene()
 	delete this;
 	SDL_FreeSurface(this->sprite->surface);
 	SDL_DestroyTexture(this->sprite->texture);
+}
+
+void TestMath() {
+	int time = clock();
+	cout << "system result:" << sqrt(11) << endl;
+	cout << "System speed:" << (clock() - time) << endl;
+
+	time = clock();
+	cout << "noa result:" << n_sqrt(11) << endl;
+	cout << "noa speed:" << (clock() - time) << endl;
 }
