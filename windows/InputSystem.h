@@ -8,6 +8,13 @@
 //用来存放输入事件
 extern NoaEvent gameEvent;
 
+/*键盘输入事件*/
+extern void(*KeyboardEvent[100])(void);
+
+extern void AddKeyboardEvent(void (*keyEvent)(void));
+
+extern void InvokeKeyboardEven();
+
 extern void OnInput();
 
 #endif
