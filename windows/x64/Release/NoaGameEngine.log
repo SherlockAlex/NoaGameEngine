@@ -1,14 +1,20 @@
-﻿  NoaMath.cpp
+﻿  GameSetting.cpp
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
 D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\NoaMath.cpp(43,8): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\NoaMath.cpp(44,8): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\NoaMath.cpp(54,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\NoaMath.cpp(55,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\NoaMath.cpp(60,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-  正在生成代码
-  6 of 56 functions (10.7%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  已完成代码的生成
-  NoaGameEngine.vcxproj -> D:\Work\Learn\NoaGameEngine\x64\Release\NoaGameEngine.exe
+  InitGame.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  InputSystem.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+  Player.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Player.cpp(80,25): error C2276: “&”: 绑定成员函数表达式上的非法操作
+  Scene.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Scene.cpp(36,30): warning C4244: “=”: 从“Uint32”转换到“float”，可能丢失数据
+  TestMenu.cpp
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\Sprite.h(35,2): warning C4091: “typedef ”: 没有声明变量时忽略“SpriteList”的左侧
+D:\Work\Learn\NoaGameEngine\NoaGameEngine\windows\GameScene.h(38,2): warning C4091: “typedef ”: 没有声明变量时忽略“sceneList”的左侧

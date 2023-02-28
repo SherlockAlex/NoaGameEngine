@@ -13,7 +13,7 @@ class Player :public GameObject
 public:
 
 	/*处理玩家键盘控制*/
-	bool PlayerControl();
+	void PlayerControl();
 
 	/*处理玩家移动事件*/
 	void Move();

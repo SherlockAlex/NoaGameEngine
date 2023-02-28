@@ -1,16 +1,27 @@
 #include <iostream>
 #include "SDL2/SDL.h"
 #include "InputSystem.h"
+
 #include "Application.h"
 
 using namespace std;
 
-static int keyboardCount=0;
-
-void AddKeyboardEvent(void(*keyEvent)(void))
+void AddKeyboardEvent(void(*keyEvent)(void),int index)
 {
 	/*添加keyEvent到事件KeyboardEvent列表中*/
-	
+	KeyboardEvent[index] = keyEvent;
+}
+
+
+
+void AddPlayerKeyboardEvent(void (Player::* keyEvent)(void),void * context, int index)
+{
+
+	/*封装事件*/
+
+	//((Player*)context->*keyEvent)();
+	PlayerKeyboardEvent[index] = keyEvent;
+
 }
 
 void InvokeKeyboardEven()
